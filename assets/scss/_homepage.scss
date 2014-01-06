@@ -1,0 +1,34 @@
+.homeheader {
+	background-image: url(http://distilleryimage1.ak.instagram.com/2e7275d6728411e39e8b1240b816546d_8.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-color: #444;
+	background-repeat: no-repeat;
+	color: #fff;
+	h1 {
+		text-align: right;
+		padding: 3rem 1rem;
+		background-color: rgba(0,0,0,0.5);
+		span {
+			display: block;
+		}
+		small {
+			font-size: 1.6rem;
+			display: block;
+			line-height: 1;
+			letter-spacing: 0.07em;
+		}
+	}
+}
+
+section {
+	margin: 1em 0;
+}
+
+.homeabout {
+	@extend .container;
+}
+
+.homecontent {
+	@extend .container;
+}

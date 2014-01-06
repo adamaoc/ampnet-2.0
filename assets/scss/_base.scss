@@ -1,3 +1,4 @@
+@import "compass/css3";
 /* ==================================
    ========= Define Variables =======
    ================================== */
@@ -6,6 +7,7 @@ $primary-color: blue;
 $secondary-color: red;
 
 $font-color: #333;
+$header-font-color: #50585D;
 
 $base-font: 'Droid Serif', serif;
 
@@ -16,6 +18,11 @@ $sm: 40rem;
 $md: 60rem;
 $lg: 80rem;
 
+$grid-padding: 1em;
+
+
+@import "grid";
+
 /* ==================================
    ====== Setup Base & Helpers ======
    ================================== */
@@ -23,7 +30,7 @@ $lg: 80rem;
 *{
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+    @include box-sizing(border-box);
 }
 
 html {
@@ -41,6 +48,9 @@ body {
     max-height: 100%;
 }
 
+.container {
+    padding: 1rem;
+}
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -75,6 +85,13 @@ textarea {
     resize: vertical;
 }
 
+a:focus {
+    outline: thin dotted;
+}
+a:active,
+a:hover {
+    outline: 0;
+}
 
 .hidden {
     display: none !important;

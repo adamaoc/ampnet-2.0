@@ -9,8 +9,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
+        <title>ampnet(media) - Adam Moore developing in Dallas, Texas</title>
+        <meta name="description" content="I'm a web developer in Dallas, Texas.">
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="/assets/css/main.css">
@@ -23,8 +23,11 @@
         <![endif]-->
 
 	<?php
+		// import the nav menu
+		require_once "templates/nav.php";
 		// ender templates here - 
 		// if homepage show homepage ext.
+		include "templates/homepage.php";
 	?>  
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
