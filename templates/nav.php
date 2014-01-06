@@ -1,6 +1,7 @@
 <a href="#0" class="nav-toggle">(a)</a>
 
 <nav class="site-nav">
+	<span class="nav-off">X</span>
 	<ul>
 		<li><a href="/">home</a></li>
 		<li><a href="/about">about</a></li>

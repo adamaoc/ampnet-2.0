@@ -415,7 +415,17 @@ table.plain tbody > tr:nth-child(odd) > td, table.plain tbody > tr:nth-child(odd
 
 /* line 19, ../scss/_nav.scss */
 .site-nav {
-  display: none; }
+  display: none;
+  width: 300px;
+  position: fixed;
+  margin-left: -300px;
+  top: 0;
+  bottom: 0;
+  background: #333333;
+  transition: 1s ease all; }
+/* line 28, ../scss/_nav.scss */
+.site-nav.open {
+  margin-left: 0; }
 
 /* line 1, ../scss/_homepage.scss */
 .homeheader {

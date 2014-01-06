@@ -18,4 +18,14 @@
 }
 .site-nav {
 	display: none;
+	width: 300px;
+	position: fixed;
+	margin-left: -300px;
+	top: 0;
+	bottom: 0;
+	background: $font-color;
+	transition: 1s ease all;
+	&.open {
+		margin-left: 0;
+	}
 }
