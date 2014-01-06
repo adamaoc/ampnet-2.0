@@ -2,11 +2,11 @@
    ========= Define Variables =======
    ================================== */
 /* line 18, ../scss/_grid.scss */
-.grid {
+.grid, .be-section {
   background: white;
   margin: 0 0 1em 0; }
 /* line 22, ../scss/_grid.scss */
-.grid:after {
+.grid:after, .be-section:after {
   /* Or @extend clearfix */
   content: "";
   display: table;
@@ -17,7 +17,7 @@
   float: left;
   padding-right: 1em; }
 /* line 33, ../scss/_grid.scss */
-.grid [class*='col-']:last-of-type {
+.grid [class*='col-']:last-of-type, .be-section [class*='col-']:last-of-type {
   padding-right: 0; }
 
 /* line 37, ../scss/_grid.scss */
@@ -26,32 +26,36 @@
 
 /* line 40, ../scss/_grid.scss */
 .col-1-3 {
-  width: 33.33%; }
+  width: 100%; }
+@media (min-width: 40rem) {
+  /* line 40, ../scss/_grid.scss */
+  .col-1-3 {
+    width: 33.33%; } }
 
-/* line 43, ../scss/_grid.scss */
+/* line 46, ../scss/_grid.scss */
 .col-1-2 {
   width: 50%; }
 
-/* line 46, ../scss/_grid.scss */
-.col-1-4 {
+/* line 49, ../scss/_grid.scss */
+.col-1-4, .homeabout .img-wrap {
   width: 25%; }
 
-/* line 49, ../scss/_grid.scss */
+/* line 52, ../scss/_grid.scss */
 .col-1-8 {
   width: 12.5%; }
 
 /* Opt-in outside padding */
-/* line 54, ../scss/_grid.scss */
+/* line 57, ../scss/_grid.scss */
 .grid-pad {
   padding: 1em 0 1em 1em; }
-/* line 56, ../scss/_grid.scss */
+/* line 59, ../scss/_grid.scss */
 .grid-pad [class*='col-']:last-of-type {
   padding-right: 1em; }
 
 /* ==================================
    ====== Setup Base & Helpers ======
    ================================== */
-/* line 30, ../scss/_base.scss */
+/* line 31, ../scss/_base.scss */
 * {
   margin: 0;
   padding: 0;
@@ -59,13 +63,13 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 36, ../scss/_base.scss */
+/* line 37, ../scss/_base.scss */
 html {
   height: 100%;
   max-height: 100%;
   font-size: 16px; }
 
-/* line 42, ../scss/_base.scss */
+/* line 43, ../scss/_base.scss */
 body {
   font-size: 1em;
   line-height: 1.6;
@@ -74,21 +78,25 @@ body {
   height: 100%;
   max-height: 100%; }
 
-/* line 51, ../scss/_base.scss */
+/* line 52, ../scss/_base.scss */
 .container, .homeabout, .homecontent {
-  padding: 1rem; }
+  padding: 1rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1; }
 
-/* line 55, ../scss/_base.scss */
+/* line 59, ../scss/_base.scss */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none; }
 
-/* line 60, ../scss/_base.scss */
+/* line 64, ../scss/_base.scss */
 ::selection {
   background: #b3d4fc;
   text-shadow: none; }
 
-/* line 65, ../scss/_base.scss */
+/* line 69, ../scss/_base.scss */
 hr {
   display: block;
   height: 1px;
@@ -97,34 +105,34 @@ hr {
   margin: 1em 0;
   padding: 0; }
 
-/* line 74, ../scss/_base.scss */
+/* line 78, ../scss/_base.scss */
 img {
   vertical-align: middle; }
 
-/* line 78, ../scss/_base.scss */
+/* line 82, ../scss/_base.scss */
 fieldset {
   border: 0;
   margin: 0;
   padding: 0; }
 
-/* line 84, ../scss/_base.scss */
+/* line 88, ../scss/_base.scss */
 textarea {
   resize: vertical; }
 
-/* line 88, ../scss/_base.scss */
+/* line 92, ../scss/_base.scss */
 a:focus {
   outline: thin dotted; }
 
-/* line 92, ../scss/_base.scss */
+/* line 96, ../scss/_base.scss */
 a:active, a:hover {
   outline: 0; }
 
-/* line 96, ../scss/_base.scss */
+/* line 100, ../scss/_base.scss */
 .hidden {
   display: none !important;
   visibility: hidden; }
 
-/* line 101, ../scss/_base.scss */
+/* line 105, ../scss/_base.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -135,7 +143,7 @@ a:active, a:hover {
   position: absolute;
   width: 1px; }
 
-/* line 113, ../scss/_base.scss */
+/* line 117, ../scss/_base.scss */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
@@ -144,22 +152,30 @@ a:active, a:hover {
   position: static;
   width: auto; }
 
-/* line 122, ../scss/_base.scss */
+/* line 126, ../scss/_base.scss */
 .invisible {
   visibility: hidden; }
 
-/* line 127, ../scss/_base.scss */
+/* line 131, ../scss/_base.scss */
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table; }
 
-/* line 132, ../scss/_base.scss */
+/* line 136, ../scss/_base.scss */
 .clearfix:after {
   clear: both; }
 
-/* line 136, ../scss/_base.scss */
+/* line 140, ../scss/_base.scss */
 .clearfix {
   *zoom: 1; }
+
+/* line 144, ../scss/_base.scss */
+.img-wrap {
+  width: 100%; }
+/* line 146, ../scss/_base.scss */
+.img-wrap img {
+  width: 100%;
+  max-width: 100%; }
 
 /* line 2, ../scss/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
@@ -401,35 +417,71 @@ table.plain tbody > tr:nth-child(odd) > td, table.plain tbody > tr:nth-child(odd
   left: 1rem;
   width: 3rem;
   height: 3rem;
-  background-color: #50585d;
+  background-color: #383e42;
   color: #fff;
   text-decoration: none;
   text-align: center;
   line-height: 3rem;
   font-weight: bold;
   font-size: 1.4em;
-  box-shadow: 1px 1px 8px #383e42; }
+  cursor: pointer; }
 /* line 15, ../scss/_nav.scss */
 .nav-toggle:hover {
-  color: red; }
+  box-shadow: inset 0 0 8px #212426; }
 
 /* line 19, ../scss/_nav.scss */
 .site-nav {
-  display: none;
   width: 300px;
   position: fixed;
   margin-left: -300px;
   top: 0;
   bottom: 0;
   background: #333333;
-  transition: 1s ease all; }
-/* line 28, ../scss/_nav.scss */
+  transition: 0.3s ease all; }
+/* line 27, ../scss/_nav.scss */
 .site-nav.open {
   margin-left: 0; }
+/* line 30, ../scss/_nav.scss */
+.site-nav .nav-off {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  text-align: right;
+  border-bottom: 1px solid #595959;
+  padding: 0.5em 1em;
+  background-color: #b30000; }
+/* line 41, ../scss/_nav.scss */
+.site-nav .nav-off:hover {
+  background-color: maroon; }
+/* line 45, ../scss/_nav.scss */
+.site-nav ul {
+  margin: 0;
+  padding: 0; }
+/* line 48, ../scss/_nav.scss */
+.site-nav ul li a {
+  color: #fff;
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  border-bottom: 1px solid #595959;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  text-transform: uppercase; }
+/* line 56, ../scss/_nav.scss */
+.site-nav ul li a:hover {
+  background-color: #4d4d4d; }
+/* line 60, ../scss/_nav.scss */
+.site-nav ul .flexhublink {
+  background-color: #004d00; }
+/* line 62, ../scss/_nav.scss */
+.site-nav ul .flexhublink:hover {
+  background-color: #003400; }
 
 /* line 1, ../scss/_homepage.scss */
 .homeheader {
-  background-image: url(http://distilleryimage1.ak.instagram.com/2e7275d6728411e39e8b1240b816546d_8.jpg);
+  background-image: url(https://lh3.googleusercontent.com/-QMgfJwEyzGs/UYlvzj7jXrI/AAAAAAAAFCI/d0xd4VgNchk/s630-fcrop64=1,28784245e79dd1dd/11%2B-%2B1);
   background-size: cover;
   background-position: center center;
   background-color: #444;
@@ -439,17 +491,87 @@ table.plain tbody > tr:nth-child(odd) > td, table.plain tbody > tr:nth-child(odd
 .homeheader h1 {
   text-align: right;
   padding: 3rem 1rem;
-  background-color: rgba(0, 0, 0, 0.5); }
-/* line 12, ../scss/_homepage.scss */
+  background-color: rgba(165, 42, 42, 0.2);
+  transition: 0.3s ease-in-out all; }
+@media (min-width: 40rem) {
+  /* line 8, ../scss/_homepage.scss */
+  .homeheader h1 {
+    padding-right: 3rem; } }
+/* line 16, ../scss/_homepage.scss */
 .homeheader h1 span {
   display: block; }
-/* line 15, ../scss/_homepage.scss */
+/* line 19, ../scss/_homepage.scss */
 .homeheader h1 small {
   font-size: 1.6rem;
   display: block;
-  line-height: 1;
+  line-height: 1.2;
   letter-spacing: 0.07em; }
 
-/* line 24, ../scss/_homepage.scss */
+/* line 28, ../scss/_homepage.scss */
 section {
   margin: 1em 0; }
+
+/* line 34, ../scss/_homepage.scss */
+.homeabout .img-wrap {
+  margin-left: -999em;
+  float: left;
+  margin-top: 1.6em;
+  border-radius: 50%;
+  overflow: hidden;
+  max-width: 18em; }
+@media (min-width: 40rem) {
+  /* line 34, ../scss/_homepage.scss */
+  .homeabout .img-wrap {
+    margin-left: 0; } }
+@media (min-width: 60rem) {
+  /* line 34, ../scss/_homepage.scss */
+  .homeabout .img-wrap {
+    margin-top: 0; } }
+@media (min-width: 40rem) {
+  /* line 49, ../scss/_homepage.scss */
+  .homeabout .text-wrap {
+    float: left;
+    width: 75%;
+    padding-left: 2em;
+    max-width: 40em; } }
+
+/* line 61, ../scss/_homepage.scss */
+.homecontent .strength-list {
+  padding-left: 2em;
+  border-left: 2em solid #50585d; }
+
+/* line 1, ../scss/_about-flash.scss */
+.be-section {
+  background: #2c92bd;
+  padding: 2em 0; }
+/* line 6, ../scss/_about-flash.scss */
+.be-section .what-we-do {
+  color: #fff;
+  padding: 0 1em; }
+/* line 9, ../scss/_about-flash.scss */
+.be-section .what-we-do .img-wrap {
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: inset 0px 1px 13px 1px #000;
+  background-color: #f1f1f1; }
+/* line 17, ../scss/_about-flash.scss */
+.be-section .what-we-do .img-wrap img {
+  width: 130%;
+  max-width: 130%;
+  opacity: 0.6; }
+/* line 22, ../scss/_about-flash.scss */
+.be-section .what-we-do .img-wrap.get-found img {
+  margin-left: -2rem; }
+/* line 26, ../scss/_about-flash.scss */
+.be-section .what-we-do .title {
+  text-align: center; }
+/* line 29, ../scss/_about-flash.scss */
+.be-section .what-we-do p {
+  text-align: center; }
+@media (min-width: 40rem) {
+  /* line 29, ../scss/_about-flash.scss */
+  .be-section .what-we-do p {
+    text-align: justify; } }

@@ -1,33 +1,20 @@
 <header class="homeheader">
-	<h1>I am <span>Adam</span> <span>Moore</span> <small>and I develop websites</small></h1>
+	<h1>I am <span>Adam</span> <span>Moore</span> <small>I develop websites <span>Dallas, TX</span></small></h1>
 </header>
 
 <section class="homeabout">
 	<h2>About me</h2>
-	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+	<div class="img-wrap">
+		<img src="http://distilleryimage4.ak.instagram.com/c8edbf22729211e3b4cb0a0d88bf3520_8.jpg" alt="About Adam Moore and ampnet media - Dallas web development" />
+	</div>
+	<p class="text-wrap">I am a web developer out of Dallas, Texas that wants to help your company dive into the vast ocean of the Internet. I can make sure that you'll be found with first class SEO (search engine optimization). I'll make sure you'll be noticed and your users have a great experience with a great design focused on UX/UI (User Experience/User Interface) and your business goals in mind. I will also make sure you're able to connect with your audience like never before with outstanding social media integration, development, and consulting.</p>
 </section>
 
 <section class="homecontent">
 	<h2>Core strengths include:</h2>
-	<ul>
-		<li>Front-end (HTML &amp; CSS)</li>
-		<li>Back-end (PHP)</li>
+	<ul class="strength-list">
+		<li>Front-end (HTML | CSS | JS | RWD)</li>
+		<li>Back-end (PHP | MySQL)</li>
 		<li>Platforms (WordPress)</li>
 	</ul>
 </section>	
-
-<div class="grid">
-  <div class="col-2-3">
-     <article class="module">
-        stuff
-     </article>
-     <article class="module">
-        stuff
-     </article>
-  </div>
-  <div class="col-1-3">
-    <aside class="module">
-       Sidebar stuff. Sub modules?
-    </aside>
-  </div>
-</div>

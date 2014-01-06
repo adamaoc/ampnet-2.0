@@ -1,5 +1,5 @@
 .homeheader {
-	background-image: url(http://distilleryimage1.ak.instagram.com/2e7275d6728411e39e8b1240b816546d_8.jpg);
+	background-image: url(https://lh3.googleusercontent.com/-QMgfJwEyzGs/UYlvzj7jXrI/AAAAAAAAFCI/d0xd4VgNchk/s630-fcrop64=1,28784245e79dd1dd/11%2B-%2B1);
 	background-size: cover;
 	background-position: center center;
 	background-color: #444;
@@ -8,14 +8,18 @@
 	h1 {
 		text-align: right;
 		padding: 3rem 1rem;
-		background-color: rgba(0,0,0,0.5);
+		background-color: rgba(brown, 0.2);
+		transition: 0.3s ease-in-out all;
+		@include bp(sm) {
+			padding-right: 3rem;
+		}
 		span {
 			display: block;
 		}
 		small {
 			font-size: 1.6rem;
 			display: block;
-			line-height: 1;
+			line-height: 1.2;
 			letter-spacing: 0.07em;
 		}
 	}
@@ -27,8 +31,35 @@ section {
 
 .homeabout {
 	@extend .container;
+	.img-wrap {
+		@extend .col-1-4;
+		margin-left: -999em;
+		float: left;
+		margin-top: 1.6em;
+		border-radius: 50%;
+		overflow: hidden;
+		max-width: 18em;
+		@include bp(sm) {
+			margin-left: 0;
+		}
+		@include bp(md) {
+			margin-top: 0;
+		}
+	}
+	.text-wrap {
+		@include bp(sm) {
+			float: left;
+			width: 75%;
+			padding-left: 2em;
+			max-width: 40em;
+		}
+	}
 }
 
 .homecontent {
 	@extend .container;
+	.strength-list {
+		padding-left: 2em;
+		border-left: 2em solid $header-font-color;
+	}
 }

@@ -1,4 +1,4 @@
-<a href="#0" class="nav-toggle">(a)</a>
+<span class="nav-toggle">(a)</span>
 
 <nav class="site-nav">
 	<span class="nav-off">X</span>
@@ -8,5 +8,6 @@
 		<li><a href="/work">work</a></li>
 		<li><a href="/contact">contact</a></li>
 		<li><a href="/what-i-offer">what I offer</a></li>
+		<li><a href="http://flexhub.ampnetmedia.com" class="flexhublink">LogIn <span>(FlexHub)</span></a></li>
 	</ul>
 </nav>
