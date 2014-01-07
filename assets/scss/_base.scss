@@ -3,9 +3,12 @@
 /* ==================================
    ========= Define Variables =======
    ================================== */
+// #557278 // green //
+//$primary-color: #2C92BD; // light blue
+//$primary-color: #544540; // brown
 
-$primary-color: #2C92BD;
-$secondary-color: red;
+$primary-color: #557278; // green
+$secondary-color: #7F342C; // red
 
 $font-color: #333;
 $header-font-color: #50585D;
@@ -54,6 +57,18 @@ body {
     max-width: $md;
     margin: 0 auto;
     @include clearfix();
+    h1 {
+        line-height: 1.2;
+        text-align: right;
+        small {
+            font-size: 2rem;
+            line-height: 1;
+            display: block;
+            @include bp(sm) {
+                font-size: 0.8em;
+            }
+        }
+    }
 }
 
 ::-moz-selection {
@@ -87,14 +102,6 @@ fieldset {
 
 textarea {
     resize: vertical;
-}
-
-a:focus {
-    outline: thin dotted;
-}
-a:active,
-a:hover {
-    outline: 0;
 }
 
 .hidden {

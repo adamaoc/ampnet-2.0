@@ -1,5 +1,5 @@
 <header class="homeheader">
-	<h1>I am <span>Adam</span> <span>Moore</span> <small>I develop websites <span>Dallas, TX</span></small></h1>
+	<h1>I am <span>Adam</span> <span>Moore</span> <small>I develop websites <span>and live in Dallas, TX</span></small></h1>
 </header>
 
 <section class="homeabout">

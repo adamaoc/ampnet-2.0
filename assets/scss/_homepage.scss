@@ -8,13 +8,14 @@
 	h1 {
 		text-align: right;
 		padding: 3rem 1rem;
-		background-color: rgba(brown, 0.2);
+		background-color: rgba($primary-color, 0.3);
 		transition: 0.3s ease-in-out all;
 		@include bp(sm) {
 			padding-right: 3rem;
 		}
 		span {
 			display: block;
+			color: #fff;
 		}
 		small {
 			font-size: 1.6rem;
@@ -60,6 +61,9 @@ section {
 	@extend .container;
 	.strength-list {
 		padding-left: 2em;
-		border-left: 2em solid $header-font-color;
+		border-left: 1em solid $header-font-color;
+		@include bp(sm) {
+			border-left: 2em solid $header-font-color;
+		}
 	}
 }

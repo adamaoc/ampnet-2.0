@@ -4,6 +4,9 @@ h4, h5, h6 {
     line-height: 1;
     margin-top: 0;
     font-family: 'Open Sans', sans-serif;
+    span {
+        color: $secondary-color;
+    }
 }
 
 h1 {
@@ -22,41 +25,50 @@ h2 {
     letter-spacing: -1px;
     text-indent: -2px;
     @include bp(sm) {
-        font-size: 3.7rem;
+        font-size: 3.2rem;
     }
 }
 
 h3 {
     font-size: 2.8rem;
     @include bp(sm) {
-        font-size: 3.2rem;
+        font-size: 2.8rem;
     }
 }
 
 h4 {
-    font-size: 3rem;
-}
-
-h5 {
-    font-size: 2.5rem;
-}
-
-h6 {
     font-size: 2rem;
 }
 
+h5 {
+    font-size: 1.8rem;
+}
+
+h6 {
+    font-size: 1.5rem;
+}
+
 a {
-    color: #4a4a4a;
+    color: $primary-color;
     transition: color ease 0.3s;
 }
 
+a:focus {
+    outline: thin dotted;
+}
+a:active,
 a:hover {
-    color: #57A3E8;
+    outline: 0;
+    color: darken($primary-color, 10%);
 }
 
 h1 a, h2 a, h3 a,
 h4 a, h5 a, h6 a {
-    color: #50585D;
+    color: darken($primary-color, 10%);
+    text-decoration: none;
+    &:hover, &:active {
+        color: darken($primary-color, 18%);
+    }
 }
 
 

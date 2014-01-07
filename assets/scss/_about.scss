@@ -1,0 +1,17 @@
+.main-about {
+	blockquote {
+		max-width: 40em;
+		@include bp(sm) {
+			margin-left: 5rem;
+		}
+	}
+	ul {
+		margin-left: 1rem;
+		@include bp(sm) {
+			margin-left: 5rem;
+		}
+		p {
+			max-width: 40rem;
+		}
+	}
+}

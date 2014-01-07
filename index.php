@@ -1,5 +1,20 @@
 <?php
 
+define('BLOG_URL', 'http://'.$_SERVER["SERVER_NAME"].'/');
+$homepage = BLOG_URL;
+
+// Get the current page.    
+$currentpage  = @( $_SERVER["HTTPS"] != 'on' ) ? 'http://'.$_SERVER["SERVER_NAME"] : 'https://'.$_SERVER["SERVER_NAME"];
+$currentpage .= $_SERVER["REQUEST_URI"];
+
+// If is home.
+$is_home = ($homepage==$currentpage);
+define('IS_HOME', $is_home);
+define('IS_ABOUT', (bool)strstr($_SERVER['REQUEST_URI'], '/about/'));
+define('IS_WORK', (bool)strstr($_SERVER['REQUEST_URI'], '/work/'));
+define('IS_SINGLE', !(IS_HOME || IS_CATEGORY));
+$is_about = IS_ABOUT;
+$is_work = IS_WORK;
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -23,12 +38,24 @@
         <![endif]-->
 
 	<?php
-		// import the nav menu
+		// import the nav menu - same on all pages
 		require_once "templates/nav.php";
-		// ender templates here - 
+		
+		// render templates here - 
 		// if homepage show homepage ext.
-		require_once "templates/homepage.php";
-		require_once "templates/about-flash.php";
+		if($is_home) {
+			require_once "templates/homepage.php";
+			require_once "templates/about-flash.php";
+			require_once "templates/recent-work.php";
+		}else if($is_about) {
+			require_once "templates/about.php";
+			require_once "templates/about-flash.php";
+		}else if($is_work) {
+			require_once "templates/work.php";
+		}
+
+		// page footer - same on all pages
+		require_once "templates/footer.php";
 	?>  
 
         <?php //<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> ?>

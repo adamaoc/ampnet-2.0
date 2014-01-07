@@ -55,7 +55,7 @@
 /* ==================================
    ====== Setup Base & Helpers ======
    ================================== */
-/* line 31, ../scss/_base.scss */
+/* line 34, ../scss/_base.scss */
 * {
   margin: 0;
   padding: 0;
@@ -63,13 +63,13 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 37, ../scss/_base.scss */
+/* line 40, ../scss/_base.scss */
 html {
   height: 100%;
   max-height: 100%;
   font-size: 16px; }
 
-/* line 43, ../scss/_base.scss */
+/* line 46, ../scss/_base.scss */
 body {
   font-size: 1em;
   line-height: 1.6;
@@ -78,25 +78,38 @@ body {
   height: 100%;
   max-height: 100%; }
 
-/* line 52, ../scss/_base.scss */
+/* line 55, ../scss/_base.scss */
 .container, .homeabout, .homecontent {
   padding: 1rem;
   max-width: 60rem;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1; }
+/* line 60, ../scss/_base.scss */
+.container h1, .homeabout h1, .homecontent h1 {
+  line-height: 1.2;
+  text-align: right; }
+/* line 63, ../scss/_base.scss */
+.container h1 small, .homeabout h1 small, .homecontent h1 small {
+  font-size: 2rem;
+  line-height: 1;
+  display: block; }
+@media (min-width: 40rem) {
+  /* line 63, ../scss/_base.scss */
+  .container h1 small, .homeabout h1 small, .homecontent h1 small {
+    font-size: 0.8em; } }
 
-/* line 59, ../scss/_base.scss */
+/* line 74, ../scss/_base.scss */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none; }
 
-/* line 64, ../scss/_base.scss */
+/* line 79, ../scss/_base.scss */
 ::selection {
   background: #b3d4fc;
   text-shadow: none; }
 
-/* line 69, ../scss/_base.scss */
+/* line 84, ../scss/_base.scss */
 hr {
   display: block;
   height: 1px;
@@ -105,34 +118,26 @@ hr {
   margin: 1em 0;
   padding: 0; }
 
-/* line 78, ../scss/_base.scss */
+/* line 93, ../scss/_base.scss */
 img {
   vertical-align: middle; }
 
-/* line 82, ../scss/_base.scss */
+/* line 97, ../scss/_base.scss */
 fieldset {
   border: 0;
   margin: 0;
   padding: 0; }
 
-/* line 88, ../scss/_base.scss */
+/* line 103, ../scss/_base.scss */
 textarea {
   resize: vertical; }
 
-/* line 92, ../scss/_base.scss */
-a:focus {
-  outline: thin dotted; }
-
-/* line 96, ../scss/_base.scss */
-a:active, a:hover {
-  outline: 0; }
-
-/* line 100, ../scss/_base.scss */
+/* line 107, ../scss/_base.scss */
 .hidden {
   display: none !important;
   visibility: hidden; }
 
-/* line 105, ../scss/_base.scss */
+/* line 112, ../scss/_base.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -143,7 +148,7 @@ a:active, a:hover {
   position: absolute;
   width: 1px; }
 
-/* line 117, ../scss/_base.scss */
+/* line 124, ../scss/_base.scss */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
@@ -152,27 +157,27 @@ a:active, a:hover {
   position: static;
   width: auto; }
 
-/* line 126, ../scss/_base.scss */
+/* line 133, ../scss/_base.scss */
 .invisible {
   visibility: hidden; }
 
-/* line 131, ../scss/_base.scss */
+/* line 138, ../scss/_base.scss */
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table; }
 
-/* line 136, ../scss/_base.scss */
+/* line 143, ../scss/_base.scss */
 .clearfix:after {
   clear: both; }
 
-/* line 140, ../scss/_base.scss */
+/* line 147, ../scss/_base.scss */
 .clearfix {
   *zoom: 1; }
 
-/* line 144, ../scss/_base.scss */
+/* line 151, ../scss/_base.scss */
 .img-wrap {
   width: 100%; }
-/* line 146, ../scss/_base.scss */
+/* line 153, ../scss/_base.scss */
 .img-wrap img {
   width: 100%;
   max-width: 100%; }
@@ -183,71 +188,83 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   margin-top: 0;
   font-family: 'Open Sans', sans-serif; }
+/* line 7, ../scss/_typography.scss */
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+  color: #7f342c; }
 
-/* line 9, ../scss/_typography.scss */
+/* line 12, ../scss/_typography.scss */
 h1 {
   font-size: 4rem;
   line-height: 1.2em;
   letter-spacing: -2px;
   text-indent: -3px; }
 @media (min-width: 40rem) {
-  /* line 9, ../scss/_typography.scss */
+  /* line 12, ../scss/_typography.scss */
   h1 {
     font-size: 5rem; } }
 
-/* line 19, ../scss/_typography.scss */
+/* line 22, ../scss/_typography.scss */
 h2 {
   font-size: 3rem;
   line-height: 1.2em;
   letter-spacing: -1px;
   text-indent: -2px; }
 @media (min-width: 40rem) {
-  /* line 19, ../scss/_typography.scss */
+  /* line 22, ../scss/_typography.scss */
   h2 {
-    font-size: 3.7rem; } }
+    font-size: 3.2rem; } }
 
-/* line 29, ../scss/_typography.scss */
+/* line 32, ../scss/_typography.scss */
 h3 {
   font-size: 2.8rem; }
 @media (min-width: 40rem) {
-  /* line 29, ../scss/_typography.scss */
+  /* line 32, ../scss/_typography.scss */
   h3 {
-    font-size: 3.2rem; } }
+    font-size: 2.8rem; } }
 
-/* line 36, ../scss/_typography.scss */
+/* line 39, ../scss/_typography.scss */
 h4 {
-  font-size: 3rem; }
-
-/* line 40, ../scss/_typography.scss */
-h5 {
-  font-size: 2.5rem; }
-
-/* line 44, ../scss/_typography.scss */
-h6 {
   font-size: 2rem; }
 
-/* line 48, ../scss/_typography.scss */
+/* line 43, ../scss/_typography.scss */
+h5 {
+  font-size: 1.8rem; }
+
+/* line 47, ../scss/_typography.scss */
+h6 {
+  font-size: 1.5rem; }
+
+/* line 51, ../scss/_typography.scss */
 a {
-  color: #4a4a4a;
+  color: #557278;
   transition: color ease 0.3s; }
 
-/* line 53, ../scss/_typography.scss */
-a:hover {
-  color: #57A3E8; }
+/* line 56, ../scss/_typography.scss */
+a:focus {
+  outline: thin dotted; }
 
-/* line 58, ../scss/_typography.scss */
+/* line 60, ../scss/_typography.scss */
+a:active, a:hover {
+  outline: 0;
+  color: #40565a; }
+
+/* line 66, ../scss/_typography.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-  color: #50585D; }
+  color: #40565a;
+  text-decoration: none; }
+/* line 69, ../scss/_typography.scss */
+h1 a:hover, h1 a:active, h2 a:hover, h2 a:active, h3 a:hover, h3 a:active, h4 a:hover, h4 a:active, h5 a:hover, h5 a:active, h6 a:hover, h6 a:active {
+  color: #2f3f42; }
 
-/* line 63, ../scss/_typography.scss */
+/* line 75, ../scss/_typography.scss */
 p, ul, ol {
   margin: 1.6em 0; }
 
-/* line 68, ../scss/_typography.scss */
+/* line 80, ../scss/_typography.scss */
 ol ol, ul ul, ul ol, ol ul {
   margin: 0.4em 0; }
 
-/* line 72, ../scss/_typography.scss */
+/* line 84, ../scss/_typography.scss */
 hr {
   display: block;
   height: 1px;
@@ -256,7 +273,7 @@ hr {
   margin: 3.2em 0;
   padding: 0; }
 
-/* line 81, ../scss/_typography.scss */
+/* line 93, ../scss/_typography.scss */
 blockquote {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -264,35 +281,35 @@ blockquote {
   padding: 0 0 0 1.6em;
   border-left: #4a4a4a 0.6em solid; }
 
-/* line 89, ../scss/_typography.scss */
+/* line 101, ../scss/_typography.scss */
 blockquote p {
   margin: 0.8em 0;
   font-style: italic; }
 
-/* line 94, ../scss/_typography.scss */
+/* line 106, ../scss/_typography.scss */
 blockquote small {
   display: inline-block;
   margin: 0.8em 0 0.8em 1.5em;
   font-size: 0.9em;
   color: #ccc; }
 
-/* line 101, ../scss/_typography.scss */
+/* line 113, ../scss/_typography.scss */
 blockquote small:before {
   content: '\2014 \00A0'; }
 
-/* line 103, ../scss/_typography.scss */
+/* line 115, ../scss/_typography.scss */
 blockquote cite {
   font-weight: bold; }
 
-/* line 107, ../scss/_typography.scss */
+/* line 119, ../scss/_typography.scss */
 blockquote cite a {
   font-weight: normal; }
 
-/* line 109, ../scss/_typography.scss */
+/* line 121, ../scss/_typography.scss */
 dl {
   margin: 1.6em 0; }
 
-/* line 113, ../scss/_typography.scss */
+/* line 125, ../scss/_typography.scss */
 dl dt {
   float: left;
   width: 180px;
@@ -304,16 +321,16 @@ dl dt {
   font-weight: bold;
   margin-bottom: 1em; }
 
-/* line 125, ../scss/_typography.scss */
+/* line 137, ../scss/_typography.scss */
 dl dd {
   margin-left: 200px;
   margin-bottom: 1em; }
 
-/* line 130, ../scss/_typography.scss */
+/* line 142, ../scss/_typography.scss */
 mark {
   background-color: #ffc336; }
 
-/* line 134, ../scss/_typography.scss */
+/* line 146, ../scss/_typography.scss */
 code, tt {
   padding: 1px 3px;
   font-family: Inconsolata, monospace, sans-serif;
@@ -323,7 +340,7 @@ code, tt {
   background: #F7FAFB;
   border-radius: 2px; }
 
-/* line 144, ../scss/_typography.scss */
+/* line 156, ../scss/_typography.scss */
 pre {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -338,7 +355,7 @@ pre {
   background: #F7FAFB;
   border-radius: 3px; }
 
-/* line 159, ../scss/_typography.scss */
+/* line 171, ../scss/_typography.scss */
 pre code, tt {
   font-size: inherit;
   white-space: -moz-pre-wrap;
@@ -347,7 +364,7 @@ pre code, tt {
   border: none;
   padding: 0; }
 
-/* line 168, ../scss/_typography.scss */
+/* line 180, ../scss/_typography.scss */
 kbd {
   display: inline-block;
   margin-bottom: 0.4em;
@@ -361,7 +378,7 @@ kbd {
   border-radius: 4px;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 0 white inset; }
 
-/* line 184, ../scss/_typography.scss */
+/* line 196, ../scss/_typography.scss */
 table {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -370,7 +387,7 @@ table {
   max-width: 100%;
   background-color: transparent; }
 
-/* line 194, ../scss/_typography.scss */
+/* line 206, ../scss/_typography.scss */
 table th, table td {
   padding: 8px;
   line-height: 20px;
@@ -378,31 +395,31 @@ table th, table td {
   vertical-align: top;
   border-top: 1px solid #efefef; }
 
-/* line 202, ../scss/_typography.scss */
+/* line 214, ../scss/_typography.scss */
 table th {
   color: #000; }
 
-/* line 209, ../scss/_typography.scss */
+/* line 221, ../scss/_typography.scss */
 table caption + thead tr:first-child th, table caption + thead tr:first-child td, table colgroup + thead tr:first-child th, table colgroup + thead tr:first-child td, table thead:first-child tr:first-child th, table thead:first-child tr:first-child td {
   border-top: 0; }
 
-/* line 213, ../scss/_typography.scss */
+/* line 225, ../scss/_typography.scss */
 table tbody + tbody {
   border-top: 2px solid #efefef; }
 
-/* line 215, ../scss/_typography.scss */
+/* line 227, ../scss/_typography.scss */
 table table table {
   background-color: #fff; }
 
-/* line 218, ../scss/_typography.scss */
+/* line 230, ../scss/_typography.scss */
 table tbody > tr:nth-child(odd) > td, table tbody > tr:nth-child(odd) > th {
   background-color: #f6f6f6; }
 
-/* line 224, ../scss/_typography.scss */
+/* line 236, ../scss/_typography.scss */
 table.plain tbody > tr:nth-child(odd) > td, table.plain tbody > tr:nth-child(odd) > th {
   background: transparent; }
 
-/* line 229, ../scss/_typography.scss */
+/* line 241, ../scss/_typography.scss */
 .post-meta {
   display: inline-block;
   margin: 0 0 5px 0;
@@ -414,22 +431,24 @@ table.plain tbody > tr:nth-child(odd) > td, table.plain tbody > tr:nth-child(odd
 .nav-toggle {
   position: fixed;
   top: 1rem;
-  left: 1rem;
-  width: 3rem;
-  height: 3rem;
-  background-color: #383e42;
+  left: 0;
+  width: 4rem;
+  height: 2.7rem;
+  background-color: #40565a;
   color: #fff;
   text-decoration: none;
   text-align: center;
-  line-height: 3rem;
+  line-height: 2.7rem;
   font-weight: bold;
   font-size: 1.4em;
-  cursor: pointer; }
-/* line 15, ../scss/_nav.scss */
+  cursor: pointer;
+  text-align: right;
+  padding-right: 0.5rem; }
+/* line 17, ../scss/_nav.scss */
 .nav-toggle:hover {
-  box-shadow: inset 0 0 8px #212426; }
+  box-shadow: inset 0 0 8px #2f3f42; }
 
-/* line 19, ../scss/_nav.scss */
+/* line 21, ../scss/_nav.scss */
 .site-nav {
   width: 300px;
   position: fixed;
@@ -437,11 +456,12 @@ table.plain tbody > tr:nth-child(odd) > td, table.plain tbody > tr:nth-child(odd
   top: 0;
   bottom: 0;
   background: #333333;
-  transition: 0.3s ease all; }
-/* line 27, ../scss/_nav.scss */
+  transition: 0.3s ease all;
+  z-index: 1000; }
+/* line 30, ../scss/_nav.scss */
 .site-nav.open {
   margin-left: 0; }
-/* line 30, ../scss/_nav.scss */
+/* line 33, ../scss/_nav.scss */
 .site-nav .nav-off {
   display: block;
   width: 100%;
@@ -452,15 +472,15 @@ table.plain tbody > tr:nth-child(odd) > td, table.plain tbody > tr:nth-child(odd
   text-align: right;
   border-bottom: 1px solid #595959;
   padding: 0.5em 1em;
-  background-color: #b30000; }
-/* line 41, ../scss/_nav.scss */
+  background-color: #6c2c25; }
+/* line 44, ../scss/_nav.scss */
 .site-nav .nav-off:hover {
-  background-color: maroon; }
-/* line 45, ../scss/_nav.scss */
+  background-color: #461d18; }
+/* line 48, ../scss/_nav.scss */
 .site-nav ul {
   margin: 0;
   padding: 0; }
-/* line 48, ../scss/_nav.scss */
+/* line 51, ../scss/_nav.scss */
 .site-nav ul li a {
   color: #fff;
   display: block;
@@ -469,15 +489,15 @@ table.plain tbody > tr:nth-child(odd) > td, table.plain tbody > tr:nth-child(odd
   padding: 0.5em 1em;
   text-decoration: none;
   text-transform: uppercase; }
-/* line 56, ../scss/_nav.scss */
+/* line 59, ../scss/_nav.scss */
 .site-nav ul li a:hover {
   background-color: #4d4d4d; }
-/* line 60, ../scss/_nav.scss */
+/* line 63, ../scss/_nav.scss */
 .site-nav ul .flexhublink {
-  background-color: #004d00; }
-/* line 62, ../scss/_nav.scss */
+  background-color: #40565a; }
+/* line 65, ../scss/_nav.scss */
 .site-nav ul .flexhublink:hover {
-  background-color: #003400; }
+  background-color: #35474b; }
 
 /* line 1, ../scss/_homepage.scss */
 .homeheader {
@@ -491,7 +511,7 @@ table.plain tbody > tr:nth-child(odd) > td, table.plain tbody > tr:nth-child(odd
 .homeheader h1 {
   text-align: right;
   padding: 3rem 1rem;
-  background-color: rgba(165, 42, 42, 0.2);
+  background-color: rgba(85, 114, 120, 0.3);
   transition: 0.3s ease-in-out all; }
 @media (min-width: 40rem) {
   /* line 8, ../scss/_homepage.scss */
@@ -499,19 +519,20 @@ table.plain tbody > tr:nth-child(odd) > td, table.plain tbody > tr:nth-child(odd
     padding-right: 3rem; } }
 /* line 16, ../scss/_homepage.scss */
 .homeheader h1 span {
-  display: block; }
-/* line 19, ../scss/_homepage.scss */
+  display: block;
+  color: #fff; }
+/* line 20, ../scss/_homepage.scss */
 .homeheader h1 small {
   font-size: 1.6rem;
   display: block;
   line-height: 1.2;
   letter-spacing: 0.07em; }
 
-/* line 28, ../scss/_homepage.scss */
+/* line 29, ../scss/_homepage.scss */
 section {
   margin: 1em 0; }
 
-/* line 34, ../scss/_homepage.scss */
+/* line 35, ../scss/_homepage.scss */
 .homeabout .img-wrap {
   margin-left: -999em;
   float: left;
@@ -520,35 +541,40 @@ section {
   overflow: hidden;
   max-width: 18em; }
 @media (min-width: 40rem) {
-  /* line 34, ../scss/_homepage.scss */
+  /* line 35, ../scss/_homepage.scss */
   .homeabout .img-wrap {
     margin-left: 0; } }
 @media (min-width: 60rem) {
-  /* line 34, ../scss/_homepage.scss */
+  /* line 35, ../scss/_homepage.scss */
   .homeabout .img-wrap {
     margin-top: 0; } }
 @media (min-width: 40rem) {
-  /* line 49, ../scss/_homepage.scss */
+  /* line 50, ../scss/_homepage.scss */
   .homeabout .text-wrap {
     float: left;
     width: 75%;
     padding-left: 2em;
     max-width: 40em; } }
 
-/* line 61, ../scss/_homepage.scss */
+/* line 62, ../scss/_homepage.scss */
 .homecontent .strength-list {
   padding-left: 2em;
-  border-left: 2em solid #50585d; }
+  border-left: 1em solid #50585d; }
+@media (min-width: 40rem) {
+  /* line 62, ../scss/_homepage.scss */
+  .homecontent .strength-list {
+    border-left: 2em solid #50585d; } }
 
 /* line 1, ../scss/_about-flash.scss */
 .be-section {
-  background: #2c92bd;
+  background: #557278;
+  box-shadow: inset 0 1px 13px 1px #445b60;
   padding: 2em 0; }
-/* line 6, ../scss/_about-flash.scss */
+/* line 7, ../scss/_about-flash.scss */
 .be-section .what-we-do {
   color: #fff;
   padding: 0 1em; }
-/* line 9, ../scss/_about-flash.scss */
+/* line 10, ../scss/_about-flash.scss */
 .be-section .what-we-do .img-wrap {
   width: 10rem;
   height: 10rem;
@@ -556,22 +582,93 @@ section {
   border-radius: 50%;
   overflow: hidden;
   box-shadow: inset 0px 1px 13px 1px #000;
-  background-color: #f1f1f1; }
-/* line 17, ../scss/_about-flash.scss */
+  background-color: #557278;
+  margin-bottom: 0.5em; }
+/* line 19, ../scss/_about-flash.scss */
 .be-section .what-we-do .img-wrap img {
   width: 130%;
   max-width: 130%;
   opacity: 0.6; }
-/* line 22, ../scss/_about-flash.scss */
+/* line 24, ../scss/_about-flash.scss */
 .be-section .what-we-do .img-wrap.get-found img {
   margin-left: -2rem; }
-/* line 26, ../scss/_about-flash.scss */
+/* line 28, ../scss/_about-flash.scss */
 .be-section .what-we-do .title {
   text-align: center; }
-/* line 29, ../scss/_about-flash.scss */
+/* line 31, ../scss/_about-flash.scss */
 .be-section .what-we-do p {
   text-align: center; }
 @media (min-width: 40rem) {
-  /* line 29, ../scss/_about-flash.scss */
+  /* line 31, ../scss/_about-flash.scss */
   .be-section .what-we-do p {
     text-align: justify; } }
+
+/* line 2, ../scss/_recent-work.scss */
+.recent-work .work-list {
+  list-style: none; }
+@media (min-width: 40rem) {
+  /* line 2, ../scss/_recent-work.scss */
+  .recent-work .work-list {
+    padding-left: 2em; } }
+/* line 9, ../scss/_recent-work.scss */
+.recent-work .list-title {
+  padding-bottom: 1em; }
+/* line 13, ../scss/_recent-work.scss */
+.recent-work .img-wrap {
+  max-width: 18.75rem; }
+@media (min-width: 40rem) {
+  /* line 13, ../scss/_recent-work.scss */
+  .recent-work .img-wrap {
+    width: 25%;
+    float: left; } }
+@media (min-width: 40rem) {
+  /* line 21, ../scss/_recent-work.scss */
+  .recent-work .text-wrap {
+    width: 75%;
+    float: left; } }
+/* line 26, ../scss/_recent-work.scss */
+.recent-work .text-wrap p {
+  margin-top: 0; }
+/* line 30, ../scss/_recent-work.scss */
+.recent-work .full-link {
+  background-color: #557278;
+  color: #fff;
+  display: block;
+  width: 100%;
+  line-height: 2.3;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: inset 0 0 10px #40565a;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase; }
+
+/* line 1, ../scss/_footer.scss */
+.site-footer {
+  text-align: center;
+  padding: 0.5rem 0;
+  background-color: #ccc; }
+/* line 5, ../scss/_footer.scss */
+.site-footer p {
+  margin: 0;
+  line-height: 1.1; }
+/* line 9, ../scss/_footer.scss */
+.site-footer small {
+  font-size: 0.6rem; }
+
+/* line 2, ../scss/_about.scss */
+.main-about blockquote {
+  max-width: 40em; }
+@media (min-width: 40rem) {
+  /* line 2, ../scss/_about.scss */
+  .main-about blockquote {
+    margin-left: 5rem; } }
+/* line 8, ../scss/_about.scss */
+.main-about ul {
+  margin-left: 1rem; }
+@media (min-width: 40rem) {
+  /* line 8, ../scss/_about.scss */
+  .main-about ul {
+    margin-left: 5rem; } }
+/* line 13, ../scss/_about.scss */
+.main-about ul p {
+  max-width: 40rem; }
