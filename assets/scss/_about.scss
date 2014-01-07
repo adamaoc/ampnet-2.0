@@ -14,4 +14,30 @@
 			max-width: 40rem;
 		}
 	}
+	.more-about {
+		overflow: hidden;
+		.img-wrap {
+			@extend .col-1-4;
+			margin-left: -999em;
+			float: left;
+			margin-top: 1.6em;
+			border-radius: 50%;
+			overflow: hidden;
+			max-width: 18em;
+			@include bp(sm) {
+				margin-left: 0;
+			}
+			@include bp(md) {
+				margin-top: 0;
+			}
+		}
+		.text-wrap {
+			@include bp(sm) {
+				float: left;
+				width: 75%;
+				padding-left: 2em;
+				max-width: 40em;
+			}
+		}
+	}
 }

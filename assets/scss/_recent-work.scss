@@ -4,6 +4,9 @@
 		@include bp(sm) {
 			padding-left: 2em;
 		}
+		li {
+			@include clearfix();
+		}
 	}
 	
 	.list-title {

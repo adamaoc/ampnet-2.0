@@ -37,7 +37,7 @@
   width: 50%; }
 
 /* line 49, ../scss/_grid.scss */
-.col-1-4, .homeabout .img-wrap {
+.col-1-4, .homeabout .img-wrap, .main-about .more-about .img-wrap {
   width: 25%; }
 
 /* line 52, ../scss/_grid.scss */
@@ -610,26 +610,30 @@ section {
   /* line 2, ../scss/_recent-work.scss */
   .recent-work .work-list {
     padding-left: 2em; } }
-/* line 9, ../scss/_recent-work.scss */
+/* line 7, ../scss/_recent-work.scss */
+.recent-work .work-list li {
+  overflow: hidden;
+  *zoom: 1; }
+/* line 12, ../scss/_recent-work.scss */
 .recent-work .list-title {
   padding-bottom: 1em; }
-/* line 13, ../scss/_recent-work.scss */
+/* line 16, ../scss/_recent-work.scss */
 .recent-work .img-wrap {
   max-width: 18.75rem; }
 @media (min-width: 40rem) {
-  /* line 13, ../scss/_recent-work.scss */
+  /* line 16, ../scss/_recent-work.scss */
   .recent-work .img-wrap {
     width: 25%;
     float: left; } }
 @media (min-width: 40rem) {
-  /* line 21, ../scss/_recent-work.scss */
+  /* line 24, ../scss/_recent-work.scss */
   .recent-work .text-wrap {
     width: 75%;
     float: left; } }
-/* line 26, ../scss/_recent-work.scss */
+/* line 29, ../scss/_recent-work.scss */
 .recent-work .text-wrap p {
   margin-top: 0; }
-/* line 30, ../scss/_recent-work.scss */
+/* line 33, ../scss/_recent-work.scss */
 .recent-work .full-link {
   background-color: #557278;
   color: #fff;
@@ -672,3 +676,29 @@ section {
 /* line 13, ../scss/_about.scss */
 .main-about ul p {
   max-width: 40rem; }
+/* line 17, ../scss/_about.scss */
+.main-about .more-about {
+  overflow: hidden; }
+/* line 19, ../scss/_about.scss */
+.main-about .more-about .img-wrap {
+  margin-left: -999em;
+  float: left;
+  margin-top: 1.6em;
+  border-radius: 50%;
+  overflow: hidden;
+  max-width: 18em; }
+@media (min-width: 40rem) {
+  /* line 19, ../scss/_about.scss */
+  .main-about .more-about .img-wrap {
+    margin-left: 0; } }
+@media (min-width: 60rem) {
+  /* line 19, ../scss/_about.scss */
+  .main-about .more-about .img-wrap {
+    margin-top: 0; } }
+@media (min-width: 40rem) {
+  /* line 34, ../scss/_about.scss */
+  .main-about .more-about .text-wrap {
+    float: left;
+    width: 75%;
+    padding-left: 2em;
+    max-width: 40em; } }
