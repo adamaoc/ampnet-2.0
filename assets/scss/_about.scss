@@ -40,4 +40,9 @@
 			}
 		}
 	}
+	.aboutme-dl {
+		@include bp(sm) {
+			margin-left: 14em;
+		}
+	}
 }

@@ -18,6 +18,14 @@
 				<h4>Flex<span>Hub</span></h4>
 				<p>FlexHub is a tool I've built for my web clients. This tool allows you to easily keep track of your and make quick and easy updates. This isn't a full featured CMS but is built specifically around websites I build for clients.</p>
 			</li>
+			<li>
+				<h4>non-profit <span>Websites</span></h4>
+				<p>Having founded a non-profit myself I know the struggles it takes. Anything I can do to make that experince easier and to help you get your cause off the ground; I'm game! That's why I make a special offering to non-profits looking for web development or getting started with social media.</p>
+			</li>
+			<li>
+				<h4>Political <span>Websites</span></h4>
+				<p>Whether you're planning to run a campaign or start a grass-roots movement, I love jumping in on the grownd level and helping everyday people get their message out on the vast web.</p>
+			</li>
 		</ul>
 		<h2>more about me</h2>
 		<div class="more-about">
@@ -28,7 +36,7 @@
 				<p>I pride myself on being a family man. I love my family and they are number one in my book. I also pride myself in my work and work my hardest to produce things that I can be proud of.</p>
 			</div>
 		</div>
-		<dl>
+		<dl class="aboutme-dl">
 			<dt>twitter:</dt>
 			<dd><a href="http://twitter.com/adamaoc">@adamaoc</a></dd>
 			<dt>github:</dt>

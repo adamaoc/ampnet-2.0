@@ -6,6 +6,11 @@
 		}
 		li {
 			@include clearfix();
+			border-top: 0.5em solid lighten($secondary-color, 60%);
+			padding-top: 0.5em;
+			&:first-child {
+				border-top: none;
+			}
 		}
 	}
 	
