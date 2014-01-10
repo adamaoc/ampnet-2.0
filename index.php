@@ -44,6 +44,7 @@ $is_work = IS_WORK;
 		// render templates here - 
 		// if homepage show homepage ext.
 		if($is_home) {
+            require_once "_flex/functions/GetWork.php";
 			require_once "templates/homepage.php";
 			require_once "templates/about-flash.php";
 			require_once "templates/recent-work.php";
@@ -51,6 +52,7 @@ $is_work = IS_WORK;
 			require_once "templates/about.php";
 			require_once "templates/about-flash.php";
 		}else if($is_work) {
+            require_once "_flex/functions/GetWork.php";
 			require_once "templates/work.php";
 		}
 
