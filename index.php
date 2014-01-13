@@ -14,10 +14,11 @@ define('IS_HOME', $is_home);
 define('IS_ABOUT', (bool)strstr($_SERVER['REQUEST_URI'], '/about/'));
 define('IS_WORK', (bool)strstr($_SERVER['REQUEST_URI'], '/work/'));
 define('IS_CONTACT', (bool)strstr($_SERVER['REQUEST_URI'], '/contact/'));
-define('IS_SINGLE', !(IS_HOME || IS_CATEGORY));
+define('IS_SUCCESS', (bool)strstr($_SERVER['REQUEST_URI'], '/success/'));
 $is_about = IS_ABOUT;
 $is_work = IS_WORK;
 $is_contact = IS_CONTACT;
+$is_success = IS_SUCCESS;
 if($is_contact) {
     require_once "_flex/functions/contact.php";
 }
@@ -63,6 +64,8 @@ if($is_contact) {
 		}else if($is_contact) {
             // require_once "_flex/functions/contact.php";
             require_once "templates/contact.php";
+        }else if($is_success) {
+
         }
 
 		// page footer - same on all pages

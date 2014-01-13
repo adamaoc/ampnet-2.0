@@ -16,4 +16,6 @@ RewriteRule ^work/$ ./index.php [L]
 RewriteRule ^contact$ ./index.php [L]
 RewriteRule ^contact/$ ./index.php [L]
 
+RewriteRule ^success$ ./index.php [L]
+RewriteRule ^success/$ ./index.php [L]
 </IfModule>
