@@ -711,3 +711,11 @@ section {
   /* line 43, ../scss/_about.scss */
   .main-about .aboutme-dl {
     margin-left: 14em; } }
+
+/* line 2, ../scss/_contact.scss */
+.contact blockquote {
+  max-width: 40em; }
+@media (min-width: 40rem) {
+  /* line 2, ../scss/_contact.scss */
+  .contact blockquote {
+    margin-left: 5rem; } }

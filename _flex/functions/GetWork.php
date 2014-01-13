@@ -2,9 +2,10 @@
 // require_once "parsedown.php";
 $flexroot = $_SERVER['DOCUMENT_ROOT'];
 $flexroot = explode('/', $flexroot);
-$flexroot = $flexroot[0].'/'.$flexroot[1].'/'.$flexroot[2].'/'.$flexroot[3].'/'.'/flexhub/_flex/classes/Parsedown.php';
-// var_dump($flexroot);
-require_once $flexroot;
+$flexrootParsedown = $flexroot[0].'/'.$flexroot[1].'/'.$flexroot[2].'/'.$flexroot[3].'/'.'/flexhub/_flex/classes/Parsedown.php';
+
+
+require_once $flexrootParsedown;
 define('DOC_ROOT', $_SERVER['DOCUMENT_ROOT']);
 $posts_dir = DOC_ROOT.'/_flex/data/work/';
 $file_ext = "md";

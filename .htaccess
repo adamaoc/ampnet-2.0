@@ -13,4 +13,7 @@ RewriteRule ^about/$ ./index.php [L]
 RewriteRule ^work$ ./index.php [L]
 RewriteRule ^work/$ ./index.php [L]
 
+RewriteRule ^contact$ ./index.php [L]
+RewriteRule ^contact/$ ./index.php [L]
+
 </IfModule>

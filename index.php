@@ -1,4 +1,5 @@
 <?php
+require_once "_flex/core/init.php";
 
 define('BLOG_URL', 'http://'.$_SERVER["SERVER_NAME"].'/');
 $homepage = BLOG_URL;
@@ -12,9 +13,11 @@ $is_home = ($homepage==$currentpage);
 define('IS_HOME', $is_home);
 define('IS_ABOUT', (bool)strstr($_SERVER['REQUEST_URI'], '/about/'));
 define('IS_WORK', (bool)strstr($_SERVER['REQUEST_URI'], '/work/'));
+define('IS_CONTACT', (bool)strstr($_SERVER['REQUEST_URI'], '/contact/'));
 define('IS_SINGLE', !(IS_HOME || IS_CATEGORY));
 $is_about = IS_ABOUT;
 $is_work = IS_WORK;
+$is_contact = IS_CONTACT;
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -54,7 +57,10 @@ $is_work = IS_WORK;
 		}else if($is_work) {
             require_once "_flex/functions/GetWork.php";
 			require_once "templates/work.php";
-		}
+		}else if($is_contact) {
+            require_once "_flex/functions/contact.php";
+            require_once "templates/contact.php";
+        }
 
 		// page footer - same on all pages
 		require_once "templates/footer.php";

@@ -1,0 +1,8 @@
+.contact {
+	blockquote {
+		max-width: 40em;
+		@include bp(sm) {
+			margin-left: 5rem;
+		}
+	}
+}
