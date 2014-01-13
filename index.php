@@ -18,6 +18,9 @@ define('IS_SINGLE', !(IS_HOME || IS_CATEGORY));
 $is_about = IS_ABOUT;
 $is_work = IS_WORK;
 $is_contact = IS_CONTACT;
+if($is_contact) {
+    require_once "_flex/functions/contact.php";
+}
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -58,7 +61,7 @@ $is_contact = IS_CONTACT;
             require_once "_flex/functions/GetWork.php";
 			require_once "templates/work.php";
 		}else if($is_contact) {
-            require_once "_flex/functions/contact.php";
+            // require_once "_flex/functions/contact.php";
             require_once "templates/contact.php";
         }
 

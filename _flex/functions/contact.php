@@ -1,5 +1,5 @@
 <?php 
-// require_once "parsedown.php";
+// require FlexHub Classes
 $flexroot = $_SERVER['DOCUMENT_ROOT'];
 $flexroot = explode('/', $flexroot);
 $flexrootValidate = $flexroot[0].'/'.$flexroot[1].'/'.$flexroot[2].'/'.$flexroot[3].'/'.'/flexhub/_flex/classes/Validate.php';
@@ -8,6 +8,7 @@ $flexrootToken = $flexroot[0].'/'.$flexroot[1].'/'.$flexroot[2].'/'.$flexroot[3]
 $flexrootSession = $flexroot[0].'/'.$flexroot[1].'/'.$flexroot[2].'/'.$flexroot[3].'/'.'/flexhub/_flex/classes/Session.php';
 $flexrootConfig = $flexroot[0].'/'.$flexroot[1].'/'.$flexroot[2].'/'.$flexroot[3].'/'.'/flexhub/_flex/classes/Config.php';
 $flexrootDB = $flexroot[0].'/'.$flexroot[1].'/'.$flexroot[2].'/'.$flexroot[3].'/'.'/flexhub/_flex/classes/DB.php';
+$flexrootRedirect = $flexroot[0].'/'.$flexroot[1].'/'.$flexroot[2].'/'.$flexroot[3].'/'.'/flexhub/_flex/classes/Redirect.php';
 
 require_once $flexrootConfig;
 require_once $flexrootDB;
@@ -15,6 +16,7 @@ require_once $flexrootValidate;
 require_once $flexrootInput;
 require_once $flexrootToken;
 require_once $flexrootSession;
+require_once $flexrootRedirect;
 
 if(Input::exists()) {
 	if(Token::check(Input::get('token'))) {
@@ -40,7 +42,7 @@ if(Input::exists()) {
 		));
 
 		if($validation->passed()) {
-			echo "Passed";
+			Redirect::to("/success/");
 
 		} else {
 			$errors = array();
