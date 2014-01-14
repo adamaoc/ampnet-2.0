@@ -4,10 +4,8 @@ error_reporting(E_ALL ^ E_NOTICE);
 
 session_start();
 
-$host = "localhost";
-$username = "root";
-$password = "root";
-$dbname = "FlexHub";
+require_once $_SERVER['DOCUMENT_ROOT'].'/config.php';
+require_once "definitions.php";
 
 // Create a global configuration
 $GLOBALS['config'] = array(
@@ -23,3 +21,11 @@ $GLOBALS['config'] = array(
 	)
 );
 
+
+if($is_contact) {
+    require_once "_flex/functions/Email.php";
+    require_once "_flex/functions/contact.php";
+}
+if($is_success) {
+	require_once "_flex/functions/successModel.php";
+}

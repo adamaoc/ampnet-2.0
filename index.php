@@ -1,31 +1,5 @@
 <?php
 require_once "_flex/core/init.php";
-
-define('BLOG_URL', 'http://'.$_SERVER["SERVER_NAME"].'/');
-$homepage = BLOG_URL;
-
-// Get the current page.    
-$currentpage  = @( $_SERVER["HTTPS"] != 'on' ) ? 'http://'.$_SERVER["SERVER_NAME"] : 'https://'.$_SERVER["SERVER_NAME"];
-$currentpage .= $_SERVER["REQUEST_URI"];
-
-// If is home.
-$is_home = ($homepage==$currentpage);
-define('IS_HOME', $is_home);
-define('IS_ABOUT', (bool)strstr($_SERVER['REQUEST_URI'], '/about/'));
-define('IS_WORK', (bool)strstr($_SERVER['REQUEST_URI'], '/work/'));
-define('IS_CONTACT', (bool)strstr($_SERVER['REQUEST_URI'], '/contact/'));
-define('IS_SUCCESS', (bool)strstr($_SERVER['REQUEST_URI'], '/success/'));
-$is_about = IS_ABOUT;
-$is_work = IS_WORK;
-$is_contact = IS_CONTACT;
-$is_success = IS_SUCCESS;
-if($is_contact) {
-    require_once "_flex/functions/Email.php";
-    require_once "_flex/functions/contact.php";
-}
-if($is_success) {
-	require_once "_flex/functions/successModel.php";
-}
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->

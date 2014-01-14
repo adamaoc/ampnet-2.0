@@ -44,7 +44,7 @@ function sendMessage($name, $company, $email, $phone, $reason, $message, $site) 
 		'reason' => $reason, 
 		'message' => $message);
 	// set session
-	Session::put('success', $success);
+	Session::flash('success', $success);
 	
 	// send email 
 	// mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");

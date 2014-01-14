@@ -1,22 +1,12 @@
 <?php 
-// require FlexHub Classes
-$flexroot = $_SERVER['DOCUMENT_ROOT'];
-$flexroot = explode('/', $flexroot);
-$flexrootValidate = $flexroot[0].'/'.$flexroot[1].'/'.$flexroot[2].'/'.$flexroot[3].'/'.'/flexhub/_flex/classes/Validate.php';
-$flexrootInput = $flexroot[0].'/'.$flexroot[1].'/'.$flexroot[2].'/'.$flexroot[3].'/'.'/flexhub/_flex/classes/Input.php';
-$flexrootToken = $flexroot[0].'/'.$flexroot[1].'/'.$flexroot[2].'/'.$flexroot[3].'/'.'/flexhub/_flex/classes/Token.php';
-$flexrootSession = $flexroot[0].'/'.$flexroot[1].'/'.$flexroot[2].'/'.$flexroot[3].'/'.'/flexhub/_flex/classes/Session.php';
-$flexrootConfig = $flexroot[0].'/'.$flexroot[1].'/'.$flexroot[2].'/'.$flexroot[3].'/'.'/flexhub/_flex/classes/Config.php';
-$flexrootDB = $flexroot[0].'/'.$flexroot[1].'/'.$flexroot[2].'/'.$flexroot[3].'/'.'/flexhub/_flex/classes/DB.php';
-$flexrootRedirect = $flexroot[0].'/'.$flexroot[1].'/'.$flexroot[2].'/'.$flexroot[3].'/'.'/flexhub/_flex/classes/Redirect.php';
 
-require_once $flexrootConfig;
-require_once $flexrootDB;
-require_once $flexrootValidate;
-require_once $flexrootInput;
-require_once $flexrootToken;
-require_once $flexrootSession;
-require_once $flexrootRedirect;
+require_once $flexConfig;
+require_once $flexDB;
+require_once $flexValidate;
+require_once $flexInput;
+require_once $flexToken;
+require_once $flexSessions;
+require_once $flexRedirect;
 
 
 
@@ -51,9 +41,7 @@ if(Input::exists()) {
 			sendMessage($_POST['name'], $_POST['company'], $_POST['email'], $_POST['phone'], $_POST['reason'], $_POST['message'], $_POST['site']);
 
 			Redirect::to("/success/");
-			// echo "<pre>";
-			// print_r($_POST);
-			// echo "</pre>";
+			
 		} else {
 			$errors = array();
 			foreach($validate->errors() as $error) {

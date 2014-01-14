@@ -1,8 +1,9 @@
 <?php
-$flexroot = $_SERVER['DOCUMENT_ROOT'];
-$flexroot = explode('/', $flexroot);
+require_once $flexSessions;
+require_once $flexRedirect;
 
-$flexrootSession = $flexroot[0].'/'.$flexroot[1].'/'.$flexroot[2].'/'.$flexroot[3].'/'.'/flexhub/_flex/classes/Session.php';
-require_once $flexrootSession;
-
-$success = Session::get('success');
+if(Session::exists('success')) {
+	$success = Session::flash('success');
+} else {
+	Redirect::to('/contact/');
+}

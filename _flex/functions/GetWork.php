@@ -1,17 +1,6 @@
 <?php 
-// require_once "parsedown.php";
-$flexroot = $_SERVER['DOCUMENT_ROOT'];
-$flexroot = explode('/', $flexroot);
-$flexrootParsedown = $flexroot[0].'/'.$flexroot[1].'/'.$flexroot[2].'/'.$flexroot[3].'/'.'/flexhub/_flex/classes/Parsedown.php';
 
-
-require_once $flexrootParsedown;
-define('DOC_ROOT', $_SERVER['DOCUMENT_ROOT']);
-$posts_dir = DOC_ROOT.'/_flex/data/work/';
-$file_ext = "md";
-define('POSTS_DIR', $posts_dir);
-define('FILE_EXT', $file_ext);
-
+require_once $flexParsedown;
 
 function get_all_posts() {
 
