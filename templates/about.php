@@ -20,11 +20,11 @@
 			</li>
 			<li>
 				<h4>non-profit <span>Websites</span></h4>
-				<p>Having founded a non-profit myself I know the struggles it takes. Anything I can do to make that experince easier and to help you get your cause off the ground; I'm game! That's why I make a special offering to non-profits looking for web development or getting started with social media.</p>
+				<p>Having founded a non-profit myself I know the struggles it takes. Anything I can do to make that experience easier and to help you get your cause off the ground; I’m game! That's why I make a special offering to non-profits looking for web development or getting started with social media.</p>
 			</li>
 			<li>
 				<h4>Political <span>Websites</span></h4>
-				<p>Whether you're planning to run a campaign or start a grass-roots movement, I love jumping in on the grownd level and helping everyday people get their message out on the vast web.</p>
+				<p>Whether you're planning to run a campaign or start a grass-roots movement, I love jumping in on the ground level and helping everyday people get their message out on the vast web.</p>
 			</li>
 		</ul>
 		<h2>more about me</h2>
@@ -33,7 +33,7 @@
 				<img src="http://distilleryimage2.ak.instagram.com/7ae4dea876ea11e39c8f12a4e8421c6a_8.jpg" alt="Learn more about Adam and ampnet media" />
 			</div>
 			<div class="text-wrap">
-				<p>I pride myself on being a family man. I love my family and they are number one in my book. I also pride myself in my work and work my hardest to produce things that I can be proud of.</p>
+				<p>I pride myself on being a family man. I work hard every day to be able to set an example for my children and provide for them. I pride myself in my work and work my hardest to produce things that I can really be proud to show off. </p>
 			</div>
 		</div>
 		<dl class="aboutme-dl">
