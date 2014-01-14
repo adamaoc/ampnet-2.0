@@ -51,7 +51,8 @@
 					<label for="message">More details:</label>
 					<textarea id="message" name="message" placeholder="Ender more details here."></textarea>
 				</div>
-				<input type="submit" value="Send!" />
+				<input type="submit" value="Send!" class="btn-submit" />
+				<input type="hidden" name="site" value="ampnetmedia">
 				<input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
 			</form>
 		</section>

@@ -20,7 +20,11 @@ $is_work = IS_WORK;
 $is_contact = IS_CONTACT;
 $is_success = IS_SUCCESS;
 if($is_contact) {
+    require_once "_flex/functions/Email.php";
     require_once "_flex/functions/contact.php";
+}
+if($is_success) {
+	require_once "_flex/functions/successModel.php";
 }
 ?>
 <!DOCTYPE html>
@@ -62,10 +66,9 @@ if($is_contact) {
             require_once "_flex/functions/GetWork.php";
 			require_once "templates/work.php";
 		}else if($is_contact) {
-            // require_once "_flex/functions/contact.php";
             require_once "templates/contact.php";
         }else if($is_success) {
-
+            require_once "templates/success.php";
         }
 
 		// page footer - same on all pages

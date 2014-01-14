@@ -56,7 +56,7 @@ function get_all_posts() {
 
             }
         }
-        array_multisort($filetimes, SORT_DESC, $files);
+        // array_multisort($filetimes, SORT_DESC, $files);
         return $files;
 
     } else {

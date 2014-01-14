@@ -6,3 +6,12 @@
 		}
 	}
 }
+.contact-form {
+	@include bp(sm) {
+		width: 50%;
+		margin: 0 auto;
+	}
+	.btn-submit {
+		margin-left: 1rem;
+	}
+}

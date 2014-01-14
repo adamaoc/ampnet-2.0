@@ -18,6 +18,8 @@ require_once $flexrootToken;
 require_once $flexrootSession;
 require_once $flexrootRedirect;
 
+
+
 if(Input::exists()) {
 	if(Token::check(Input::get('token'))) {
 
@@ -31,19 +33,27 @@ if(Input::exists()) {
 				'required' => true,
 				'min' => 3),
 			'email' => array(
-				'required' => false,
+				'required' => true,
 				'email' => true),
 			'phone' => array(
 				'required' => false,
 				'min' => 10,
 				'max' => 13),
 			'reason' => array(
-				'required' => true)
+				'required' => true),
+			'message' => array(
+				'required' => true,
+				'min' => 4)
 		));
 
 		if($validation->passed()) {
-			Redirect::to("/success/");
+			
+			sendMessage($_POST['name'], $_POST['company'], $_POST['email'], $_POST['phone'], $_POST['reason'], $_POST['message'], $_POST['site']);
 
+			Redirect::to("/success/");
+			// echo "<pre>";
+			// print_r($_POST);
+			// echo "</pre>";
 		} else {
 			$errors = array();
 			foreach($validate->errors() as $error) {

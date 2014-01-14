@@ -427,6 +427,53 @@ table.plain tbody > tr:nth-child(odd) > td, table.plain tbody > tr:nth-child(odd
   font-size: 1.5rem;
   color: #9EABB3; }
 
+/* line 1, ../scss/_form_styles.scss */
+input {
+  height: 2rem;
+  font-size: 1.1rem; }
+
+/* line 5, ../scss/_form_styles.scss */
+label {
+  font-size: 1.1rem;
+  font-family: "Open Sans", sans-serif; }
+
+/* line 9, ../scss/_form_styles.scss */
+textarea {
+  font-size: 1.1rem;
+  height: 4rem; }
+
+/* line 14, ../scss/_form_styles.scss */
+.btn-submit {
+  line-height: 2;
+  font-size: 1.1rem;
+  font-family: "Open Sans", sans-serif;
+  background: #557278;
+  color: #fff;
+  padding: 0 2.4em;
+  cursor: pointer;
+  height: 2.2rem;
+  border: none;
+  outline: none;
+  text-transform: uppercase; }
+
+/* line 28, ../scss/_form_styles.scss */
+.stacked-form {
+  overflow: hidden;
+  *zoom: 1; }
+/* line 30, ../scss/_form_styles.scss */
+.stacked-form .form-group {
+  padding: 0.3rem 1rem; }
+/* line 32, ../scss/_form_styles.scss */
+.stacked-form .form-group label {
+  width: 100%;
+  display: block; }
+/* line 36, ../scss/_form_styles.scss */
+.stacked-form .form-group input {
+  width: 100%; }
+/* line 39, ../scss/_form_styles.scss */
+.stacked-form .form-group textarea {
+  width: 100%; }
+
 /* line 1, ../scss/_nav.scss */
 .nav-toggle {
   position: fixed;
@@ -501,7 +548,7 @@ table.plain tbody > tr:nth-child(odd) > td, table.plain tbody > tr:nth-child(odd
 
 /* line 1, ../scss/_homepage.scss */
 .homeheader {
-  background-image: url(https://lh3.googleusercontent.com/-QMgfJwEyzGs/UYlvzj7jXrI/AAAAAAAAFCI/d0xd4VgNchk/s630-fcrop64=1,28784245e79dd1dd/11%2B-%2B1);
+  background-image: url("/assets/img/home-banner.jpg");
   background-size: cover;
   background-position: center center;
   background-color: #444;
@@ -719,3 +766,12 @@ section {
   /* line 2, ../scss/_contact.scss */
   .contact blockquote {
     margin-left: 5rem; } }
+
+@media (min-width: 40rem) {
+  /* line 9, ../scss/_contact.scss */
+  .contact-form {
+    width: 50%;
+    margin: 0 auto; } }
+/* line 14, ../scss/_contact.scss */
+.contact-form .btn-submit {
+  margin-left: 1rem; }
