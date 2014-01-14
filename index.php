@@ -9,11 +9,25 @@ require_once "_flex/core/init.php";
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
         <title>ampnet(media) - Adam Moore developing in Dallas, Texas</title>
-        <meta name="description" content="I'm a web developer in Dallas, Texas.">
-        <meta name="viewport" content="width=device-width">
+        
+        <meta name="description" content="Dallas Texas based Web Design and Development. I'm an innovative developer that can help your company dive into the vast ocean of the Internet.">
+        <meta name="author" content="ampnetmedia.com">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="/assets/img/favicon.ico">
+
+        <meta name="google-site-verification" content="fSdVe-xL70WGQ4EdrP7dZemxzq1oYbc_GI48aFY1_0w" />
+        <meta name="msvalidate.01" content="B038142E19DDC9427F7BB86F8022EE9C" />
 
         <link rel="stylesheet" href="/assets/css/main.css">
+
+        <link rel="apple-touch-icon" href="/assets/img/touch-icon-iphone.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/touch-icon-ipad.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/touch-icon-iphone-retina.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/touch-icon-ipad-retina.png" />
 
         <?php //<script src="js/vendor/modernizr-2.6.2.min.js"></script> ?>
     </head>
@@ -55,10 +69,15 @@ require_once "_flex/core/init.php";
         <script src="/assets/js/main.js"></script>
 
         <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-9674179-2']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
         </script>
     </body>
 </html>
