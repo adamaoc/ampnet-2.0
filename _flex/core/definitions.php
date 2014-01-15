@@ -26,8 +26,7 @@ $is_success = IS_SUCCESS;
 
 
 // Define FLEX Classes // 
-$docArray = explode('/', DOC_ROOT);
-define('FLEX_ROOT', $docArray[0].'/'.$docArray[1].'/'.$docArray[2].'/'.$docArray[3].$flexroot);
+define('FLEX_ROOT', $docPath);
 $flexParsedown 	= FLEX_ROOT.'_flex/classes/Parsedown.php';
 $flexSessions 	= FLEX_ROOT.'_flex/classes/Session.php';
 $flexInput 		= FLEX_ROOT.'_flex/classes/Input.php';
