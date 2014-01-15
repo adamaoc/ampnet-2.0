@@ -1,6 +1,6 @@
 * Holiday Design Store
 * holiday-design.com
-* HD-ChromeBook.png
+* HD-chromebook.png
 * Holiday Design is an online store designed and developed by ampnet media in Dallas, Texas.
 * holidaydesign
 * 08/01/2013

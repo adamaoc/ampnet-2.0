@@ -47,7 +47,7 @@ function sendMessage($name, $company, $email, $phone, $reason, $message, $site) 
 	Session::flash('success', $success);
 	
 	// send email 
-	// mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
+	mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
 }
 
 function validate_send_email($Name, $City, $address, $Email, $Message) {
