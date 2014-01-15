@@ -20,7 +20,7 @@ if(Input::exists()) {
 				'required' => true,
 				'min' => 4),
 			'company' => array(
-				'required' => true,
+				'required' => false,
 				'min' => 3),
 			'email' => array(
 				'required' => true,
