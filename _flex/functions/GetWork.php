@@ -33,7 +33,7 @@ function get_all_posts() {
 				$class_name = trim(str_replace(array("\n", '*'), '', $fcontents[4]));
 
 				// Define the date
-				$pub_date = trim(str_replace(array("\n", '*'), '', $fcontents[5]));
+				$pub_order = trim(str_replace(array("\n", '*', 'order -'), '', $fcontents[5]));
 
                 // Define the introductory paragraph
                 $work_intro = Parsedown::instance()->parse($fcontents[7]);
@@ -41,11 +41,11 @@ function get_all_posts() {
                 // Define the work content
                 // $work_content = Parsedown::instance()->parse(join('', array_slice($fcontents, 6, $fcontents.length -1)));
                 
-                $files[] = array('fname' => $entry, 'work_title' => $work_title, 'work_url' => $work_url, 'img_url' => $img_url, 'img_alt' => $img_alt, 'class_name' => $class_name, 'pub_date' => $pub_date, 'work_intro' => $work_intro);
+                $files[] = array('pub_order' => $pub_order, 'fname' => $entry, 'work_title' => $work_title, 'work_url' => $work_url, 'img_url' => $img_url, 'img_alt' => $img_alt, 'class_name' => $class_name, 'work_intro' => $work_intro);
 
             }
         }
-        // array_multisort($filetimes, SORT_DESC, $files);
+        array_multisort($files);
         return $files;
 
     } else {
