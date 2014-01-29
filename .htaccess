@@ -21,6 +21,9 @@ RewriteRule ^contact/$ ./index.php [L]
 
 RewriteRule ^success$ ./index.php [L]
 RewriteRule ^success/$ ./index.php [L]
+
+RewriteRule ^blog$ ./index.php [L]
+RewriteRule ^blog/$ ./index.php [L]
 </IfModule>
 
 # BEGIN GZIP

@@ -57,6 +57,9 @@ require_once "_flex/core/init.php";
             require_once "templates/contact.php";
         }else if($is_success) {
             require_once "templates/success.php";
+        }else if($is_blog) {
+            require_once "_flex/functions/GetBlogs.php";
+            require_once "templates/blog/index.php";
         }
 
 		// page footer - same on all pages
