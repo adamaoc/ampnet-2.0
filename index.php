@@ -1,4 +1,5 @@
 <?php
+// test
 require_once "_flex/core/init.php";
 ?>
 <!DOCTYPE html>
