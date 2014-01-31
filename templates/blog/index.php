@@ -9,13 +9,28 @@
 //     [pub_status] => Published
 //     [blog_intro] => line one - Lorem ipsum dolor si
 //     [blog_content] => line one - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-// )
-	$allBlogs = getBlogs();
-	foreach ($allBlogs as $blog) {
-?>
+// ) ?>
+<section class="contact">
+	<div class="container">
+		<h1>Blogging with <small>ampnet(<span>media</span>)</small></h1>
 
-	<h1><?php echo $blog['blog_title']; ?></h1>
-	<h2><?php echo $blog['blog_subtitle']; ?></h2>
-	<img src="<?php echo $blog['main_img']; ?>" alt="<?php echo $blog['blog_title']; ?>" />
-
-<?php } // off foreach ?>
+	<?php 
+		$allBlogs = getBlogs();
+		foreach ($allBlogs as $blog) {
+	?>
+		<article class="post">
+			<h2>
+				<a href="/blog/<?php echo $blog['fname']; ?>">
+					<?php echo $blog['blog_title']; ?>
+				</a>
+			</h2>
+			<h3><?php echo $blog['blog_subtitle']; ?></h3>
+			<p><date class="metadata"><?php echo $blog['pub_date']; ?></date></p>
+			<figure class="img-wrap">
+				<img src="<?php echo $blog['main_img']; ?>" alt="<?php echo $blog['blog_title']; ?>" />
+				<figcaption><?php echo $blog['blog_title']; ?></figcaption>
+			</figure>
+		</article>
+	<?php } // off foreach ?>
+	</div>
+</section>

@@ -43,10 +43,14 @@ function getBlogs() {
 
             }
         }
-        array_multisort($files);
+        array_multisort($files, SORT_DESC);
         return $files;
 
     } else {
         return false;
     }
+}
+
+function getPost($fname) {
+    var_dump($fname);
 }

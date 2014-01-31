@@ -1,6 +1,6 @@
 * Learning from the best
 * How to learn from online blogs and videos
-* 1/27/2014
+* 01/27/2014
 * http://www.phpmysql.net/wp-content/uploads/2010/12/PHPLearn.jpg
 * Published 
 

@@ -24,6 +24,10 @@ RewriteRule ^success/$ ./index.php [L]
 
 RewriteRule ^blog$ ./index.php [L]
 RewriteRule ^blog/$ ./index.php [L]
+
+RewriteRule ^blog/post-name$ ./index.php [L]
+RewriteRule ^blog/post-name/$ ./index.php [L]
+
 </IfModule>
 
 # BEGIN GZIP

@@ -40,7 +40,6 @@ require_once "_flex/core/init.php";
 	<?php
 		// import the nav menu - same on all pages
 		require_once "templates/nav.php";
-		
 		// render templates here - 
 		// if homepage show homepage ext.
 		if($is_home) {
@@ -59,8 +58,13 @@ require_once "_flex/core/init.php";
         }else if($is_success) {
             require_once "templates/success.php";
         }else if($is_blog) {
-            require_once "_flex/functions/GetBlogs.php";
-            require_once "templates/blog/index.php";
+            if($is_post) {
+                require_once "_flex/functions/GetBlogs.php";
+                require_once "templates/blog/single.php";
+            }else{
+                require_once "_flex/functions/GetBlogs.php";
+                require_once "templates/blog/index.php";
+            }
         }
 
 		// page footer - same on all pages
