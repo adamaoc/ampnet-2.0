@@ -19,11 +19,14 @@ define('IS_ABOUT', (bool)strstr($_SERVER['REQUEST_URI'], '/about/'));
 define('IS_WORK', (bool)strstr($_SERVER['REQUEST_URI'], '/work/'));
 define('IS_CONTACT', (bool)strstr($_SERVER['REQUEST_URI'], '/contact/'));
 define('IS_SUCCESS', (bool)strstr($_SERVER['REQUEST_URI'], '/success/'));
+define('IS_BLOG', (bool)strstr($_SERVER['REQUEST_URI'], '/blog/'));
+define('IS_POST', (bool)strstr($_SERVER['REQUEST_URI'], '/blog/second-blog-post/'));
 $is_about = IS_ABOUT;
 $is_work = IS_WORK;
 $is_contact = IS_CONTACT;
 $is_success = IS_SUCCESS;
-
+$is_blog = IS_BLOG;
+$is_post = IS_POST;
 
 // Define FLEX Classes // 
 define('FLEX_ROOT', $docPath);
@@ -41,5 +44,9 @@ $posts_dir = DOC_ROOT.'/_flex/data/work/';
 $file_ext = "md";
 define('POSTS_DIR', $posts_dir);
 define('FILE_EXT', $file_ext);
+
+// Define Blog Directory
+$blog_dir = DOC_ROOT.'/_flex/blog/posts/';
+define('BLOG_DIR', $blog_dir);
 
 
