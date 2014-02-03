@@ -25,8 +25,8 @@ RewriteRule ^success/$ ./index.php [L]
 RewriteRule ^blog$ ./index.php [L]
 RewriteRule ^blog/$ ./index.php [L]
 
-RewriteRule ^blog/post-name$ ./index.php [L]
-RewriteRule ^blog/post-name/$ ./index.php [L]
+RewriteCond %{QUERY_STRING} ^post=([^A-Za-z0-9.]+)$
+RewriteRule ^index.php$ /blog/%1/? [R=301]
 
 </IfModule>
 

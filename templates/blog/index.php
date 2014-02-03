@@ -17,10 +17,13 @@
 	<?php 
 		$allBlogs = getBlogs();
 		foreach ($allBlogs as $blog) {
+			$filename = $blog['fname'];
+			$filename = explode('.', $filename);
+			$bloglink = $filename[0];
 	?>
 		<article class="post">
 			<h2>
-				<a href="/blog/<?php echo $blog['fname']; ?>">
+				<a href="/blog/<?php echo $bloglink; ?>">
 					<?php echo $blog['blog_title']; ?>
 				</a>
 			</h2>
