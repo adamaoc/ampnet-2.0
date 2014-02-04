@@ -9,6 +9,6 @@
 		<li><a href="/blog/">blog</a></li>
 		<li><a href="/contact/">contact</a></li>
 		<!-- <li><a href="/what-i-offer/">what I offer</a></li> -->
-		<li><a href="http://flexhub.ampnetmedia.com" class="flexhublink">LogIn <span>(FlexHub)</span></a></li>
+		<li><a href="http://flexhub.ampnetmedia.com/admin/" class="flexhublink">LogIn <span>(FlexHub)</span></a></li>
 	</ul>
 </nav>
