@@ -1,10 +1,7 @@
 <?php
-<<<<<<< HEAD
-// testing //
-=======
-// test
->>>>>>> BlogSection
+
 require_once "_flex/core/init.php";
+
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -62,11 +59,10 @@ require_once "_flex/core/init.php";
         }else if($is_success) {
             require_once "templates/success.php";
         }else if($is_blog) {
+            require_once "_flex/functions/GetBlogs.php";
             if($is_post) {
-                require_once "_flex/functions/GetBlogs.php";
                 require_once "templates/blog/single.php";
             }else{
-                require_once "_flex/functions/GetBlogs.php";
                 require_once "templates/blog/index.php";
             }
         }

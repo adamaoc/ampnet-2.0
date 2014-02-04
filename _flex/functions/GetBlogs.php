@@ -52,5 +52,36 @@ function getBlogs() {
 }
 
 function getPost($fname) {
-    var_dump($fname);
+
+    $fname = explode('/', $fname);
+    $fname = $fname[1];
+    $fname = $fname.'.md';
+    // Define the blog file.
+    $fcontents = file(BLOG_DIR.$fname);
+
+
+    // Define the Blog Title
+    $blog_title = str_replace(array("\n", '*'), '', $fcontents[0]);
+
+    // Define the Blog SubTitle
+    $blog_subtitle = trim(str_replace(array("\n", '*'), '', $fcontents[1]));
+
+    // Define the Published Date
+    $pub_date = trim(str_replace(array("\n", '*'), '', $fcontents[2]));
+
+    // Define the Main Blog Image
+    $main_img = str_replace(array("\n", '*'), '', $fcontents[3]);
+
+    // Define the Published Status (Published || Draft)
+    $pub_status = trim(str_replace(array("\n", '*'), '', $fcontents[4]));
+
+    // Define the introductory paragraph
+    $blog_intro = Parsedown::instance()->parse($fcontents[6]);
+    
+    // Define the blog content
+    $blog_content = Parsedown::instance()->parse(join('', array_slice($fcontents, 6)));
+
+    $blog_post = array("title" => $blog_title, "subtitle" => $blog_subtitle, "pub_date" => $pub_date, "main_img" => $main_img, "pub_status" => $pub_status, "blog_intro" => $blog_intro, "blog_content" => $blog_content);
+    
+    return $blog_post;
 }

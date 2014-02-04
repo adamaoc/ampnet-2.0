@@ -19,8 +19,13 @@ define('IS_ABOUT', (bool)strstr($_SERVER['REQUEST_URI'], '/about/'));
 define('IS_WORK', (bool)strstr($_SERVER['REQUEST_URI'], '/work/'));
 define('IS_CONTACT', (bool)strstr($_SERVER['REQUEST_URI'], '/contact/'));
 define('IS_SUCCESS', (bool)strstr($_SERVER['REQUEST_URI'], '/success/'));
+
 define('IS_BLOG', (bool)strstr($_SERVER['REQUEST_URI'], '/blog/'));
-define('IS_POST', (bool)strstr($_SERVER['REQUEST_URI'], '/blog/second-blog-post/'));
+
+$filename = $_GET['filename'];
+$postname = $filename;
+define('IS_POST', (bool)strstr($_SERVER['REQUEST_URI'], $postname));
+
 $is_about = IS_ABOUT;
 $is_work = IS_WORK;
 $is_contact = IS_CONTACT;

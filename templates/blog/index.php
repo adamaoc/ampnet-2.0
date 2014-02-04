@@ -1,5 +1,4 @@
 <?php 
-
 // (
 //     [pub_date] => 1/27/2014
 //     [fname] => learning-from-the-best.md
