@@ -24,14 +24,15 @@ define('IS_BLOG', (bool)strstr($_SERVER['REQUEST_URI'], '/blog/'));
 
 $filename = $_GET['filename'];
 $postname = $filename;
-define('IS_POST', (bool)strstr($_SERVER['REQUEST_URI'], $postname));
-
+if(!empty($postname)) {
+  define('IS_POST', (bool)strstr($_SERVER['REQUEST_URI'], $postname));
+  $is_post = IS_POST;
+}
 $is_about = IS_ABOUT;
 $is_work = IS_WORK;
 $is_contact = IS_CONTACT;
 $is_success = IS_SUCCESS;
 $is_blog = IS_BLOG;
-$is_post = IS_POST;
 
 // Define FLEX Classes // 
 define('FLEX_ROOT', $docPath);
