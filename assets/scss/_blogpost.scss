@@ -1,0 +1,34 @@
+.single-blogpost {
+	.blogheader {
+		background-size: cover;
+		background-position: center center;
+		background-color: #444;
+		background-repeat: no-repeat;
+		color: #fff;
+		@include clearfix();
+		h1 {
+			text-align: right;
+			float: right;
+			padding: 3rem 1rem;
+			background-color: rgba($primary-color, 0.3);
+			transition: 0.3s ease-in-out all;
+			@include bp(sm) {
+				padding-right: 3rem;
+				max-width: 55%;
+			}
+			span {
+				display: block;
+				color: #fff;
+			}
+			small {
+				font-size: 1.5rem;
+				display: block;
+				line-height: 1.2;
+				letter-spacing: 0.07em;
+			}
+		}
+	}
+	.contents {
+		width: 38rem;
+	}
+}

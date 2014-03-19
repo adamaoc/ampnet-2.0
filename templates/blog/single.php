@@ -2,15 +2,17 @@
 $fname = $_GET['filename'];
 $post = getPost($fname);
 ?>
-<section class="contact">
-	<article class="container">
-		<h1><?php echo $post['title']; ?></h1>
-		<img src="<?php echo $post['main_img']; ?>" alt="<?php echo $post['title']; ?>" />
-		<h2><?php echo $post['subtitle']; ?></h2>
-		<p><meta><?php echo $post['pub_date']; ?></meta></p>
-		<div class="contents">
-			<?php echo $post['blog_content']; ?>
+
+<article class="single-blogpost">
+	<header class="blogheader" <?php if(!empty($post['main_img'])) { ?>style="background-image: url(<?php echo $post['main_img']; ?>);" <?php } ?>>
+		<div class="colorwrap">
+			<h1><?php echo $post['title']; ?> <small><?php echo $post['subtitle']; ?></small></h1>
 		</div>
+	</header>
+	
+	<div class="contents container">
+		<p><meta>published on <?php echo $post['pub_date']; ?></meta></p>
+		<?php echo $post['blog_content']; ?>
 		<nav class="back-to-blog"><a href="/blog/">&laquo; back to blog list</a></nav>
-	</article>
-</section>
+	</div>
+</article>
