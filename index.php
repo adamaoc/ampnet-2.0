@@ -32,6 +32,7 @@ require_once "_flex/core/init.php";
         <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/touch-icon-ipad-retina.png" />
 
         <?php //<script src="js/vendor/modernizr-2.6.2.min.js"></script> ?>
+        <meta property="twitter:account_id" content="32184368" />
     </head>
     <body>
         <!--[if lt IE 7]>
