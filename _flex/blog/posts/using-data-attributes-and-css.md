@@ -1,7 +1,7 @@
-* Using data attributes and CSS
-* :before and :after for making clean, dynamic content
+* Using data attributes and
+* CSS :before and :after for making clean, dynamic content
 * 12/26/2013
-* 
+* default
 * Published
 
 Data attributes are all the rage these days and work wonders with JavaScript integration but they can also work well with CSS.

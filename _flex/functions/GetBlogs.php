@@ -28,8 +28,12 @@ function getBlogs() {
 				$pub_date = trim(str_replace(array("\n", '*'), '', $fcontents[2]));
 
 				// Define the Main Blog Image
-				$main_img = str_replace(array("\n", '*'), '', $fcontents[3]);
-
+				$main_img = trim(str_replace(array("\n", '*'), '', $fcontents[3]));
+                
+                if(empty($main_img) OR $main_img == "default") {
+                    $main_img = "/assets/img/default-pattern.jpg";
+                }
+                
 				// Define the Published Status (Published || Draft)
 				$pub_status = trim(str_replace(array("\n", '*'), '', $fcontents[4]));
 
@@ -70,7 +74,11 @@ function getPost($fname) {
     $pub_date = trim(str_replace(array("\n", '*'), '', $fcontents[2]));
 
     // Define the Main Blog Image
-    $main_img = str_replace(array("\n", '*'), '', $fcontents[3]);
+    $main_img = trim(str_replace(array("\n", '*'), '', $fcontents[3]));
+    
+    if(empty($main_img) OR $main_img == "default") {
+        $main_img = "/assets/img/default-pattern.jpg";
+    }
 
     // Define the Published Status (Published || Draft)
     $pub_status = trim(str_replace(array("\n", '*'), '', $fcontents[4]));
