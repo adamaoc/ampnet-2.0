@@ -9,7 +9,7 @@
 //     [blog_intro] => line one - Lorem ipsum dolor si
 //     [blog_content] => line one - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 // ) ?>
-<section class="contact">
+<section class="bloglist">
 	<div class="container">
 		<h1>Blogging with <small>ampnet(<span>media</span>)</small></h1>
 
