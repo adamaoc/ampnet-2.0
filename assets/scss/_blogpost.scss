@@ -12,9 +12,11 @@
 			padding: 3rem 1rem;
 			background-color: rgba($primary-color, 0.3);
 			transition: 0.3s ease-in-out all;
+			font-size: 3em;
 			@include bp(sm) {
 				padding-right: 3rem;
-				max-width: 55%;
+				min-width: 55%;
+				font-size: 5em;
 			}
 			span {
 				display: block;

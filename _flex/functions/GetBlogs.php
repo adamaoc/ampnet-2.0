@@ -66,6 +66,21 @@ function getPost($fname) {
 
     // Define the Blog Title
     $blog_title = str_replace(array("\n", '*'), '', $fcontents[0]);
+    $title_count = str_word_count($blog_title);
+    if($title_count > 2) {
+        $title_arr = explode(" ", $blog_title);
+        $new_title .= "<span>";
+        $i = 1;
+        foreach ($title_arr as $word) {
+            $new_title .= $word." ";
+            if($i > 2) {
+                $new_title .= "</span>";
+            }
+            $i++;
+        }
+        
+        $blog_title = $new_title;
+    }
 
     // Define the Blog SubTitle
     $blog_subtitle = trim(str_replace(array("\n", '*'), '', $fcontents[1]));
