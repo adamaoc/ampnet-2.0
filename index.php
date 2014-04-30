@@ -1,7 +1,5 @@
 <?php
-
 require_once "_flex/core/init.php";
-
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -12,9 +10,9 @@ require_once "_flex/core/init.php";
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-        <title>ampnet(media) - Adam Moore developing in Dallas, Texas</title>
+        <title>ampnet(media) - <?php echo titleGen(); ?> / Adam Moore developing in Dallas, Texas</title>
         
-        <meta name="description" content="Dallas Texas based Web Design and Development. I'm an innovative developer that can help your company dive into the vast ocean of the Internet.">
+        <meta name="description" content="<?php echo metaDesc(); ?>">
         <meta name="author" content="ampnetmedia.com">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">

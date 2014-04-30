@@ -4,7 +4,7 @@
 
 		<section class="contact-content">
 			<h3> - (214) 702-6752 - Dallas, TX</h3>
-			<blockquote>Have questions or concerns for our team? Shoot us an email here and we'll get back with you as soon as possible. Give us your name, email address, city where you reside, and a detailed message here. We love hearing from our clients and potential clients, so if you have any questions or concerns please do not hesitate to contact us!</blockquote>
+			<blockquote>Have questions or concerns for me? Shoot me an email here and I'll get back with you as soon as possible. Give me your name, email address, city where you reside, and a detailed message here. I love hearing from my clients and potential clients, so if you have any questions or concerns please do not hesitate to contact me!</blockquote>
 		</section>
 
 		<section class="contact-form">
