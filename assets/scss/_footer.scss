@@ -10,3 +10,14 @@
 		font-size: 0.6rem;
 	}
 }
+.footer-nav {
+	ul {
+		width: 100%;
+		text-align: center;
+		margin: 0.5em;
+		li {
+			display: inline-block;
+			padding: 0 1em;
+		}
+	}
+}

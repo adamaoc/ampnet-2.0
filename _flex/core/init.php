@@ -32,3 +32,4 @@ if($is_success) {
 }
 
 require_once "_flex/functions/metasNtitles.php";
+require_once "_flex/data/navlinks.php";
