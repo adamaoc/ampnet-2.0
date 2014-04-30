@@ -2,7 +2,7 @@
 	<nav class="footer-nav">
 		<ul class="social-links">
 			<?php foreach ($sociallinks as $name => $url) {
-				echo '<li class="'.$name.'"><a href="'.$url.'">'.$name.'</a>';
+				echo '<li class="'.$name.'"><a href="'.$url.'" target="_blank">'.$name.'</a>';
 			} ?>
 		</ul>
 		<ul class="site-links">

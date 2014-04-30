@@ -11,6 +11,6 @@ $navlinks = array(
 $sociallinks = array(
 	"twitter" => 'http://twitter.com/adamaoc/',
 	"github" => 'http://github.com/adamaoc/',
-	"treehouse" => 'http://teamtreehouse/adamaoc/',
+	"treehouse" => 'http://teamtreehouse.com/adamaoc',
 	"codepen" => 'http://codepen.io/adamaoc/'
 );
