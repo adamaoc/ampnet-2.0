@@ -21,17 +21,17 @@
 			$bloglink = $filename[0];
 	?>
 		<article class="post">
-			<h2>
-				<a href="/blog/<?php echo $bloglink; ?>">
-					<?php echo $blog['blog_title']; ?>
-				</a>
-			</h2>
-			<h3><?php echo $blog['blog_subtitle']; ?></h3>
-			<p><date class="metadata"><?php echo $blog['pub_date']; ?></date></p>
+			<em class="metadata">
+				<date><?php echo $blog['pub_date']; ?></date>
+			</em>
 			<figure class="img-wrap">
 				<img src="<?php echo $blog['main_img']; ?>" alt="<?php echo $blog['blog_title']; ?>" />
-				<figcaption><?php echo $blog['blog_title']; ?></figcaption>
+				<figcaption><?php echo $blog['blog_title']; ?>...</figcaption>
 			</figure>
+			<a href="/blog/<?php echo $bloglink; ?>" class="title">
+				<h2><?php echo $blog['blog_title']; ?></h2>
+				<h3><?php echo $blog['blog_subtitle']; ?></h3>
+			</a>
 		</article>
 	<?php } // off foreach ?>
 	</div>

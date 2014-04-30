@@ -29,6 +29,9 @@
 		}
 	}
 	.contents {
-		width: 38rem;
+		max-width: 38rem;
+		img {
+			max-width: 100%;
+		}
 	}
 }
