@@ -19,6 +19,7 @@ define('IS_ABOUT', (bool)strstr($_SERVER['REQUEST_URI'], '/about/'));
 define('IS_WORK', (bool)strstr($_SERVER['REQUEST_URI'], '/work/'));
 define('IS_CONTACT', (bool)strstr($_SERVER['REQUEST_URI'], '/contact/'));
 define('IS_SUCCESS', (bool)strstr($_SERVER['REQUEST_URI'], '/success/'));
+// define('IS_404', (bool)strstr($_SERVER['REQUEST_URI'], '/404/'));
 
 define('IS_BLOG', (bool)strstr($_SERVER['REQUEST_URI'], '/blog/'));
 
@@ -33,6 +34,7 @@ $is_work = IS_WORK;
 $is_contact = IS_CONTACT;
 $is_success = IS_SUCCESS;
 $is_blog = IS_BLOG;
+// $is_404 = IS_404;
 
 // Define FLEX Classes // 
 define('FLEX_ROOT', $docPath);

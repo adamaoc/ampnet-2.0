@@ -25,6 +25,9 @@ RewriteRule ^success/$ ./index.php [L]
 RewriteRule ^blog$ ./index.php [L]
 RewriteRule ^blog/$ ./index.php [L]
 
+# RewriteRule ^404$ ./index.php?error=404 [L]
+# RewriteRule ^404/$ ./index.php?error404 [L]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ index.php/blog/?filename=$1 [NC,QSA,L]
 
