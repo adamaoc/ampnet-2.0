@@ -16,6 +16,18 @@ RewriteRule ^about/$ ./index.php [L]
 RewriteRule ^work$ ./index.php [L]
 RewriteRule ^work/$ ./index.php [L]
 
+RewriteRule ^forney-tx-web-development$ ./index.php [L]
+RewriteRule ^forney-tx-web-development/$ ./index.php [L]
+
+RewriteRule ^dallas-tx-web-development$ ./index.php [L]
+RewriteRule ^dallas-tx-web-development/$ ./index.php [L]
+
+RewriteRule ^rockwall-tx-web-development$ ./index.php [L]
+RewriteRule ^rockwall-tx-web-development/$ ./index.php [L]
+
+RewriteRule ^heath-tx-web-development$ ./index.php [L]
+RewriteRule ^heath-tx-web-development/$ ./index.php [L]
+
 RewriteRule ^contact$ ./index.php [L]
 RewriteRule ^contact/$ ./index.php [L]
 

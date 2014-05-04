@@ -1,4 +1,13 @@
 .recent-work {
+	.page-title {
+		span {
+			display: block;
+		}
+	}
+	.page-blurb {
+		max-width: 30em;
+		font-size: 1.3em;
+	}
 	.work-list {
 		list-style: none;
 		@include bp(sm) {

@@ -5,6 +5,7 @@ error_reporting(E_ALL ^ E_NOTICE);
 session_start();
 
 require_once $_SERVER['DOCUMENT_ROOT'].'/config.php';
+require_once "define_locals.php";
 require_once "definitions.php";
 
 

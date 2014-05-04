@@ -35,6 +35,7 @@ $is_contact = IS_CONTACT;
 $is_success = IS_SUCCESS;
 $is_blog = IS_BLOG;
 // $is_404 = IS_404;
+$is_local = defineLocals();
 
 // Define FLEX Classes // 
 define('FLEX_ROOT', $docPath);

@@ -53,6 +53,11 @@ require_once "_flex/core/init.php";
 		}else if($is_work) {
             require_once "_flex/functions/GetWork.php";
 			require_once "templates/work.php";
+        }else if($is_local) {
+            require_once "_flex/functions/GetWork.php";
+            $page_title = $is_local['title'];
+            $page_blurb = $is_local['blurb'];
+            require_once "templates/work.php";
 		}else if($is_contact) {
             require_once "templates/contact.php";
         }else if($is_success) {

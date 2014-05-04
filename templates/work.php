@@ -3,7 +3,17 @@
 		<h1>work <small>ampnet<span>(media)</span></small></h1>
 		<section class="recent-work">
 			<div class="container">
-				<h3>Recent Work</h3>
+				<h3 class="page-title"><?php 
+					if(isset($page_title)) {
+						echo $page_title;		
+					}else {
+						echo "<span>Portfolio</span> - DFW Web Development and Design";
+					} ?></h3>
+				<?php 
+					if(isset($page_blurb)) {
+						echo "<p class='page-blurb'>".$page_blurb."</p>";
+					}
+				?>
 				<ul class="work-list">
 					<?php 
 					$allworks = get_all_posts();

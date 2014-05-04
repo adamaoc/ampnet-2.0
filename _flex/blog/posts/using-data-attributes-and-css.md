@@ -1,6 +1,6 @@
 * Using data attributes and
 * CSS :before and :after for making clean, dynamic content
-* 12/26/2013
+* 13/12/26
 * default
 * Published
 

@@ -1,6 +1,6 @@
 * Responsive Web Development 
 * A talk for front-end devs looking to jump into RWD
-* 01/23/14
+* 14/01/23
 * /assets/img/baseballfield-header-lg.jpg
 * Published
 
