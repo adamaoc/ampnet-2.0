@@ -16,7 +16,7 @@ $currentpage .= $_SERVER["REQUEST_URI"];
 $is_home = ($homepage==$currentpage);
 define('IS_HOME', $is_home);
 define('IS_ABOUT', (bool)strstr($_SERVER['REQUEST_URI'], '/about/'));
-define('IS_WORK', (bool)strstr($_SERVER['REQUEST_URI'], '/work/'));
+define('IS_WORKS', (bool)strstr($_SERVER['REQUEST_URI'], '/work/'));
 define('IS_CONTACT', (bool)strstr($_SERVER['REQUEST_URI'], '/contact/'));
 define('IS_SUCCESS', (bool)strstr($_SERVER['REQUEST_URI'], '/success/'));
 // define('IS_404', (bool)strstr($_SERVER['REQUEST_URI'], '/404/'));
@@ -29,8 +29,15 @@ if(!empty($postname)) {
   define('IS_POST', (bool)strstr($_SERVER['REQUEST_URI'], $postname));
   $is_post = IS_POST;
 }
+
+$workname = $_GET['filename'];
+if(!empty($workname)) {
+	define('IS_WORK', (bool)strstr($_SERVER['REQUEST_URI'], $workname));
+	$is_work = IS_WORK; 
+}
+
 $is_about = IS_ABOUT;
-$is_work = IS_WORK;
+$is_works = IS_WORKS;
 $is_contact = IS_CONTACT;
 $is_success = IS_SUCCESS;
 $is_blog = IS_BLOG;

@@ -1,7 +1,3 @@
-<?php 
-echo "OLD";
-exit;
-?>
 <section class="main-work">
 	<div class="container">
 		<h1>work <small>ampnet<span>(media)</span></small></h1>

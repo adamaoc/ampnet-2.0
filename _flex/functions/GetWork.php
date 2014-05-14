@@ -57,4 +57,54 @@ function get_all_posts() {
 // echo "<pre>";
 // print_r($allworks);
 // echo "</pre>";
+
+function get_single_work($fname) {
+
+    $fname = explode('/', $fname);
+    $fname = $fname[1];
+    $fname = $fname.'.md';
+    // Define the work file.
+    $fcontents = file(POSTS_DIR.$fname);
+
+
+    // Define the Blog Title
+    $work_title = str_replace(array("\n", '*'), '', $fcontents[0]);
+    $title_count = str_word_count($work_title);
+    if($title_count > 2) {
+        $title_arr = explode(" ", $work_title);
+        $new_title .= "<span>";
+        $i = 1;
+        foreach ($title_arr as $word) {
+            $new_title .= $word." ";
+            if($i > 2) {
+                $new_title .= "</span>";
+            }
+            $i++;
+        }
+        
+        $work_title = $new_title;
+    }
+
+    // Define the work url
+    $work_url = trim(str_replace(array("\n", '*'), '', $fcontents[1]));
+
+    // Define the image url
+    $img_url = trim(str_replace(array("\n", '*'), '', $fcontents[2]));
+
+    // Define the image alt text
+    $img_alt = str_replace(array("\n", '*'), '', $fcontents[3]);
+
+    // Define the class name
+    $class_name = trim(str_replace(array("\n", '*'), '', $fcontents[4]));
+
+    // Define the date
+    $pub_order = trim(str_replace(array("\n", '*', 'order -'), '', $fcontents[5]));
+
+    // Define the introductory paragraph
+    $work_intro = Parsedown::instance()->parse($fcontents[7]);
+    
+    $work_post = array('pub_order' => $pub_order, 'fname' => $entry, 'work_title' => $work_title, 'work_url' => $work_url, 'img_url' => $img_url, 'img_alt' => $img_alt, 'class_name' => $class_name, 'work_intro' => $work_intro);
+    
+    return $work_post;
+}
 ?>

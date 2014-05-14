@@ -43,6 +43,9 @@ RewriteRule ^blog/$ ./index.php [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ index.php/blog/?filename=$1 [NC,QSA,L]
 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php/work/?workname=$1 [NC,QSA,L]
+
 </IfModule>
 
 # BEGIN GZIP
