@@ -1,9 +1,13 @@
 <?php 
 $workname = $_GET['filename'];
 $work = get_single_work($workname);
+
+if($workname == "work/bensheart/") {
+	$work['banner_url'] = 'http://bensheart.org/assets/img/main_banner.jpg';
+}
 ?>
 <article class="single-blogpost">
-	<header class="blogheader" <?php if(!empty($work['img_url'])) { ?>style="background-image: url(<?php echo $work['img_url']; ?>);" <?php } ?>>
+	<header class="blogheader" <?php if(!empty($work['banner_url'])) { ?>style="background-image: url('<?php echo $work['banner_url']; ?>');" <?php } ?>>
 		<div class="colorwrap">
 			<h1><?php echo $work['work_title']; ?></h1>
 		</div>
