@@ -20,13 +20,14 @@
 					foreach ($allworks as $work) {
 						?>
 						<li class="<?php echo $work['class_name']; ?>">
-							<h4 class="list-title"><a href="/work/<?php echo $work['class_name']; ?>/"><?php echo $work['work_url']; ?></a></h4>
 							<div class="img-wrap">
-								<img src="/assets/img/<?php echo $work['img_url']; ?>" alt="<?php echo $work['img_alt']; ?>" />
+								<a href="/work/<?php echo $work['class_name']; ?>/">
+									<img src="/assets/img/<?php echo $work['img_url']; ?>" alt="<?php echo $work['img_alt']; ?>" />
+								</a>
 							</div>
 							<div class="text-wrap">
-								<h5><?php echo $work['work_title']; ?></h5>
-								<p><?php echo $work['work_intro'] ?> <a href="http://<?php echo $work['work_url']; ?>" target="_blank">checkout the site &raquo;</a></p>
+								<h5><a href="/work/<?php echo $work['class_name']; ?>/"><?php echo $work['work_title']; ?></a></h5>
+								<p><?php echo $work['work_intro'] ?> <a href="/work/<?php echo $work['class_name']; ?>/">check-out more &raquo;</a></p>
 							</div>
 						</li>
 						<?php
