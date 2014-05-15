@@ -1,8 +1,11 @@
 * Title of work
+* Sub-title
 * url of work (bensheart.org)
-* image of work (bensheart-ChromeBook.png)
+* Main Banner Image
+* Main Banner bg-color
+* Chromebook image of work (bensheart-ChromeBook.png)
 * img alt text 
 * class name of work (bensheart)
-* date of work MM/DD/YYYY
+* date of work YYYY/MM/DD
 
 enter full discription here
