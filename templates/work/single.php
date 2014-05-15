@@ -13,7 +13,7 @@ $work = get_single_work($workname);
 	</header>
 	
 	<div class="contents container">
-		<h4><a href="<?php echo $work['work_url']; ?>">Check out <?php echo $work['work_url']; ?> &raquo;</a></h4>
+		<h5><a href="http://<?php echo $work['work_url']; ?>" target="_blank">Check out <?php echo $work['work_url']; ?> &raquo;</a></h5>
 		<div class="img-wrap work-img">
 			<img src="/assets/img/<?php echo $work['img_url']; ?>" alt="<?php echo $work['img_alt']; ?>" />
 		</div>
