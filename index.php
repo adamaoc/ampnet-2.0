@@ -73,6 +73,8 @@ require_once "_flex/core/init.php";
             }else{
                 require_once "templates/blog/index.php";
             }
+        } else {
+            require_once "templates/404.php";
         }
 
 		// page footer - same on all pages
