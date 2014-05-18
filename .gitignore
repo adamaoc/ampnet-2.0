@@ -5,3 +5,9 @@ config.php
 .sass-cache
 
 *.sublime-*
+
+builder.php
+
+testing.php
+
+old-sitemap.xml
