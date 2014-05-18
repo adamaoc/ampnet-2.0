@@ -14,3 +14,10 @@ $sociallinks = array(
 	"treehouse" => 'http://teamtreehouse.com/adamaoc',
 	"codepen" => 'http://codepen.io/adamaoc/'
 );
+
+$locallinks = array(
+	"Forney" => 'forney-tx-web-development',
+	"Dallas" => 'dallas-tx-web-development',
+	"Heath" => 'heath-tx-web-development',
+	"Rockwall" => 'rockwall-tx-web-development'
+);

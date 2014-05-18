@@ -3,7 +3,7 @@
 function titleGen() {
 	$uri = $_SERVER['REQUEST_URI'];
 	
-	$title = "Dallas, Texas Freelance Web Development making beautiful web pages for companies small and large in ".CITY_LIST.".";
+	$title = "Dallas, Texas Freelance Web Development, Design, and SEO making beautiful web pages for companies small and large in ".CITY_LIST.".";
 
 	if($uri == "/about/") {
 		$title = "About ampnet media - the Dallas, Texas Freelance Web Developer who is looking to help take your company get online.";
