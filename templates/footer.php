@@ -12,7 +12,7 @@
 		</ul>
 		<ul class="local-links">
 			<?php foreach ($locallinks as $name => $url) {
-				echo '<li class="'.$name.'"><a href="'.$url.'">'.$name.', TX</a>';
+				echo '<li class="'.$name.'"><a href="/'.$url.'">'.$name.', TX</a>';
 			} ?>
 		</ul>
 	</nav>
