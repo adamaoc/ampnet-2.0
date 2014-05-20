@@ -7,6 +7,6 @@
 				echo '<li class="'.$name.'"><a href="'.$url.'">'.$name.'</a>';
 		} ?>
 		<!-- <li><a href="/what-i-offer/">what I offer</a></li> -->
-		<li><a href="http://flexhub.ampnetmedia.com/admin/" class="flexhublink">LogIn <span>(FlexHub)</span></a></li>
+		<li><a href="http://flexhub.ampnetmedia.com/" class="flexhublink">LogIn <span>(FlexHub)</span></a></li>
 	</ul>
 </nav>
