@@ -1,112 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
 	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
 			<loc>http://ampnetmedia.com/</loc>
-			<lastmod>2014-05-19</lastmod>
+			<lastmod>2014-06-12</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>1</priority>
 		</url><url>
 			<loc>http://ampnetmedia.com/about/</loc>
-			<lastmod>2014-05-19</lastmod>
+			<lastmod>2014-06-12</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>1</priority>
 		</url><url>
 			<loc>http://ampnetmedia.com/work/</loc>
-			<lastmod>2014-05-19</lastmod>
+			<lastmod>2014-06-12</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>1</priority>
 		</url><url>
 			<loc>http://ampnetmedia.com/contact/</loc>
-			<lastmod>2014-05-19</lastmod>
+			<lastmod>2014-06-12</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>1</priority>
 		</url><url>
 			<loc>http://ampnetmedia.com/blog/</loc>
-			<lastmod>2014-05-19</lastmod>
+			<lastmod>2014-06-12</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>1</priority>
 		</url><url>
 			<loc>http://ampnetmedia.com/forney-tx-web-development</loc>
-			<lastmod>2014-05-19</lastmod>
+			<lastmod>2014-06-12</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>1</priority>
 		</url><url>
 			<loc>http://ampnetmedia.com/dallas-tx-web-development</loc>
-			<lastmod>2014-05-19</lastmod>
+			<lastmod>2014-06-12</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>1</priority>
 		</url><url>
 			<loc>http://ampnetmedia.com/heath-tx-web-development</loc>
-			<lastmod>2014-05-19</lastmod>
+			<lastmod>2014-06-12</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>1</priority>
 		</url><url>
 			<loc>http://ampnetmedia.com/rockwall-tx-web-development</loc>
-			<lastmod>2014-05-19</lastmod>
+			<lastmod>2014-06-12</lastmod>
+			<changefreq>monthly</changefreq>
+			<priority>1</priority>
+		</url><url>
+			<loc>http://ampnetmedia.com/blog/getting-started-with-assemble/</loc>
+			<lastmod>2014-06-12</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>1</priority>
 		</url><url>
 			<loc>http://ampnetmedia.com/blog/starting-with-zurb-foundation5/</loc>
-			<lastmod>2014-05-19</lastmod>
+			<lastmod>2014-06-12</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>1</priority>
 		</url><url>
 			<loc>http://ampnetmedia.com/blog/looking-at-css-transform-transition-animation/</loc>
-			<lastmod>2014-05-19</lastmod>
+			<lastmod>2014-06-12</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>1</priority>
 		</url><url>
 			<loc>http://ampnetmedia.com/blog/looking-at-sass-in-web-development/</loc>
-			<lastmod>2014-05-19</lastmod>
+			<lastmod>2014-06-12</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>1</priority>
 		</url><url>
 			<loc>http://ampnetmedia.com/blog/responsive-web-development/</loc>
-			<lastmod>2014-05-19</lastmod>
+			<lastmod>2014-06-12</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>1</priority>
 		</url><url>
 			<loc>http://ampnetmedia.com/blog/using-data-attributes-and-css/</loc>
-			<lastmod>2014-05-19</lastmod>
+			<lastmod>2014-06-12</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>1</priority>
 		</url><url>
 			<loc>http://ampnetmedia.com/work/mandjdfw/</loc>
-			<lastmod>2014-05-19</lastmod>
+			<lastmod>2014-06-12</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>1</priority>
 		</url><url>
 			<loc>http://ampnetmedia.com/work/dfwbelliesnbabies/</loc>
-			<lastmod>2014-05-19</lastmod>
+			<lastmod>2014-06-12</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>1</priority>
 		</url><url>
 			<loc>http://ampnetmedia.com/work/bensheart/</loc>
-			<lastmod>2014-05-19</lastmod>
+			<lastmod>2014-06-12</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>1</priority>
 		</url><url>
 			<loc>http://ampnetmedia.com/work/holidaydesign/</loc>
-			<lastmod>2014-05-19</lastmod>
+			<lastmod>2014-06-12</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>1</priority>
 		</url><url>
 			<loc>http://ampnetmedia.com/work/libertywebsites/</loc>
-			<lastmod>2014-05-19</lastmod>
+			<lastmod>2014-06-12</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>1</priority>
 		</url><url>
 			<loc>http://ampnetmedia.com/work/orgwebsites/</loc>
-			<lastmod>2014-05-19</lastmod>
+			<lastmod>2014-06-12</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>1</priority>
 		</url><url>
 			<loc>http://ampnetmedia.com/work/moorefam/</loc>
-			<lastmod>2014-05-19</lastmod>
+			<lastmod>2014-06-12</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>1</priority>
 		</url><url>
 			<loc>http://ampnetmedia.com/work/txgarage/</loc>
-			<lastmod>2014-05-19</lastmod>
+			<lastmod>2014-06-12</lastmod>
 			<changefreq>monthly</changefreq>
 			<priority>1</priority>
 		</url></urlset>
