@@ -148,4 +148,5 @@ This process can be as easy as FTP'ing up the `dist` folder and letting that tak
 
 *Resources:*   
 [assemble.io/](http://assemble.io/)   
-[handlebarsjs.com/](http://handlebarsjs.com/)
+[handlebarsjs.com/](http://handlebarsjs.com/)   
+[link to my slides](http://slides.com/adamaoc/assemble)   
