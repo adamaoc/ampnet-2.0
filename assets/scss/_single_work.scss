@@ -8,8 +8,10 @@
 	.work-img {
 		float: left;
 		width: 100%;
+		padding-top: 0.5em;
 		@include bp(sm) {
 			width: 50%;
+			padding-right: 1em;
 		}
 	}
 }

@@ -4,8 +4,6 @@
 * /assets/img/Puzzle-pieces.jpg
 * Published
 
-#assemble notes
-
 ##Add assemble to your project:
 
 ```
