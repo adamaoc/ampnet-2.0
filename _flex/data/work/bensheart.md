@@ -4,7 +4,7 @@
 * http://bensheart.org/assets/img/main_banner.jpg
 * 124, 0, 0, 0.4
 * bensheart-ChromeBook.png
-* Holiday Design is an online store designed and developed by ampnet media in Dallas, Texas.
+* Ben's Heart Foundation is one of the first sites I developed on the FlexHub platform.
 * bensheart
 * order - 3
 

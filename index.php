@@ -44,9 +44,11 @@ require_once "_flex/core/init.php";
 		// if homepage show homepage ext.
 		if($is_home) {
             require_once "_flex/functions/GetWork.php";
+            require_once "_flex/functions/GetBlogs.php";
 			require_once "templates/homepage.php";
 			require_once "templates/about-flash.php";
 			require_once "templates/recent-work.php";
+            require_once "templates/recent-blog.php";
 		}else if($is_about) {
 			require_once "templates/about.php";
 			require_once "templates/about-flash.php";
