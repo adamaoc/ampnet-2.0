@@ -6,7 +6,7 @@
 * bensheart-ChromeBook.png
 * Ben's Heart Foundation is one of the first sites I developed on the FlexHub platform.
 * bensheart
-* order - 3
+* order - 4
 
 Ben's Heart Foundation is one of the first sites I developed on the [FlexHub](http://flexhub.ampnetmedia.com) platform for [ORG-Websites](http://org-websites.com). This is a great non-profit that helps families in the DFW area who have children born with heart abnormalities. I helped them get the website started up as well as a social media presence on Facebook, Twitter, and Google+.
 
